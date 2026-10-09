@@ -1,5 +1,5 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset=".github/banner-dark.png">
+  <source media="(prefers-color-scheme: light)" srcset=".github/banner-light.png">
   <img alt="Clockout: track your day with every pause, copy it as one timesheet line" src=".github/banner-light.png">
 </picture>
 
