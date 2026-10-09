@@ -1450,6 +1450,36 @@
         }
       }
     },
+    "Check Now": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jetzt prüfen"
+          }
+        }
+      }
+    },
+    "Check for updates automatically": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Automatisch nach Updates suchen"
+          }
+        }
+      }
+    },
+    "Checking…": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wird geprüft…"
+          }
+        }
+      }
+    },
     "Choose File…": {
       "localizations": {
         "de": {
@@ -1666,6 +1696,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "Fronleichnam"
+          }
+        }
+      }
+    },
+    "Could not check for updates.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Suche nach Updates ist fehlgeschlagen."
           }
         }
       }
@@ -2042,6 +2082,26 @@
           "stringUnit": {
             "state": "translated",
             "value": "Done for today: %1$@ hours for %2$@."
+          }
+        }
+      }
+    },
+    "Download": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Laden"
+          }
+        }
+      }
+    },
+    "Download %@": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ laden"
           }
         }
       }
@@ -3444,6 +3504,16 @@
         }
       }
     },
+    "Once a day the app asks GitHub whether a newer version exists. No data about you or your hours is sent.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Einmal am Tag fragt die App bei GitHub nach, ob es eine neuere Version gibt. Dabei werden keine Daten über dich oder deine Stunden gesendet."
+          }
+        }
+      }
+    },
     "One continuous work block without interruption.": {
       "localizations": {
         "de": {
@@ -4066,6 +4136,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "Überspringen"
+          }
+        }
+      }
+    },
+    "Skip This Version": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Diese Version überspringen"
           }
         }
       }
@@ -4976,6 +5056,16 @@
         }
       }
     },
+    "Updates": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Updates"
+          }
+        }
+      }
+    },
     "Use carry-over": {
       "localizations": {
         "de": {
@@ -5002,6 +5092,26 @@
           "stringUnit": {
             "state": "translated",
             "value": "Urlaub"
+          }
+        }
+      }
+    },
+    "Version %@": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Version %@"
+          }
+        }
+      }
+    },
+    "Version %@ is available.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Version %@ ist verfügbar."
           }
         }
       }
@@ -5230,6 +5340,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "Working Hours"
+          }
+        }
+      }
+    },
+    "Working Hours is up to date.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Working Hours ist aktuell."
           }
         }
       }

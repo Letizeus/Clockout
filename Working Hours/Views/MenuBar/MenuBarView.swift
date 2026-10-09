@@ -90,6 +90,7 @@ private struct MenuBarContent: View {
                 }
 
                 AwayBanner(isCompact: true)
+                UpdateBanner(isCompact: true)
 
                 VStack(alignment: .leading, spacing: 2) {
                     Text(report.workedDuration.stopwatch)

@@ -15,6 +15,7 @@ struct WorkingHoursApp: App {
     @State private var jobs: JobStore
     @State private var tracker: TimeTracker
     @State private var awayDetector: AwayDetector
+    @State private var updates: UpdateChecker
     private let container: ModelContainer
 
     init() {
@@ -39,6 +40,9 @@ struct WorkingHoursApp: App {
         // Shortcuts and Siri act on the same tracker as the windows.
         AppDependencyManager.shared.add(dependency: tracker)
         AppDependencyManager.shared.add(dependency: jobs)
+        let updates = UpdateChecker()
+        _updates = State(initialValue: updates)
+        if Self.checksForUpdates { updates.start() }
     }
 
     var body: some Scene {
@@ -49,6 +53,7 @@ struct WorkingHoursApp: App {
                 .environment(tracker)
                 .environment(jobs)
                 .environment(settings)
+                .environment(updates)
                 .environment(\.locale, .app)
         }
         .modelContainer(container)
@@ -63,6 +68,7 @@ struct WorkingHoursApp: App {
                 .environment(tracker)
                 .environment(jobs)
                 .environment(settings)
+                .environment(updates)
                 .environment(\.locale, .app)
                 .modelContainer(container)
         } label: {
@@ -76,6 +82,7 @@ struct WorkingHoursApp: App {
                 .environment(tracker)
                 .environment(jobs)
                 .environment(settings)
+                .environment(updates)
                 .environment(\.locale, .app)
                 .modelContainer(container)
         }
@@ -128,6 +135,16 @@ final class AppDelegate: NSObject, NSApplicationDelegate, UNUserNotificationCent
         willPresent notification: UNNotification
     ) async -> UNNotificationPresentationOptions {
         [.banner, .sound]
+    }
+}
+
+extension WorkingHoursApp {
+    /// Not in the demo or while tests run, which would only produce needless requests.
+    static var checksForUpdates: Bool {
+        #if DEBUG
+        if DemoData.isEnabled { return false }
+        #endif
+        return ProcessInfo.processInfo.environment["XCTestConfigurationFilePath"] == nil
     }
 }
 

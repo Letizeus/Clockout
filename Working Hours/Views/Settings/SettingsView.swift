@@ -116,6 +116,7 @@ private struct SettingsTabButton: View {
 
 private struct GeneralSettingsView: View {
     @Environment(AppSettings.self) private var settings
+    @Environment(UpdateChecker.self) private var updates
 
     var body: some View {
         @Bindable var settings = settings
@@ -137,6 +138,38 @@ private struct GeneralSettingsView: View {
             ) {
                 SettingsToggle(title: "Warn about breaks and maximum hours (German ArbZG)", isOn: $settings.showsComplianceHints)
             }
+
+            @Bindable var updates = updates
+            SettingsSection(
+                title: "Updates",
+                footer: "Once a day the app asks GitHub whether a newer version exists. No data about you or your hours is sent."
+            ) {
+                SettingsToggle(title: "Check for updates automatically", isOn: $updates.isEnabled)
+                SettingsRow(title: "Version \(Self.version)", subtitle: updateStatus) {
+                    if let release = updates.offeredRelease {
+                        Button("Download \(release.version)") { updates.openDownloadPage(for: release) }
+                            .buttonStyle(.secondary(height: 26))
+                    } else {
+                        Button("Check Now") { Task { await updates.check() } }
+                            .buttonStyle(.secondary(height: 26))
+                            .disabled(updates.state == .checking)
+                    }
+                }
+            }
+        }
+    }
+
+    private static var version: String {
+        Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? "?"
+    }
+
+    private var updateStatus: LocalizedStringResource? {
+        switch updates.state {
+        case .idle: nil
+        case .checking: "Checking…"
+        case .upToDate: "Working Hours is up to date."
+        case .available(let release): "Version \(release.version) is available."
+        case .failed: "Could not check for updates."
         }
     }
 }

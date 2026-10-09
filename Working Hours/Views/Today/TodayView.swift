@@ -33,6 +33,7 @@ private struct TodayContent: View {
             VStack(alignment: .leading, spacing: 20) {
                 OtherJobRunningBanner(job: job)
                 AwayBanner()
+                UpdateBanner()
                 if let running = tracker.runningSession, running.jobID == job.uuid, running.start < day {
                     StaleSessionBanner(session: running) {
                         editorTarget = .edit(running)

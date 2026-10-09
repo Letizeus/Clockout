@@ -19,6 +19,7 @@ The app is available in English and German.
 - **Backup and restore** of all jobs, rules and entries, for example to move to a new Mac.
 - **Themes** inspired by well-known apps, light and dark, and a custom accent color.
 - **Shortcuts and Siri**: start, pause, finish the day, ask for today's hours.
+- **Update check**: shows when a newer release is available here on GitHub.
 
 ## Install
 
@@ -54,6 +55,7 @@ Launch with `-demo` in a Debug build to get two weeks of sample data in memory, 
 
 - All entries stay on your Mac, in the app's sandbox container. There is no account and no analytics.
 - The location is used once to choose the public holidays of your region and is not stored. You can also pick the region by hand.
+- Once a day the app asks the GitHub API for the latest release of this repository to offer updates. Nothing about you or your hours is sent, and the check can be turned off in Settings.
 
 ## Project layout
 
