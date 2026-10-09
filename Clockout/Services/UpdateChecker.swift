@@ -8,7 +8,7 @@ import OSLog
 @Observable
 final class UpdateChecker {
     /// Owner and name of the GitHub repository that publishes the releases.
-    static let repository = "Letizeus/clockout"
+    static let repository = "Letizeus/Clockout"
     private static let checkInterval: TimeInterval = 24 * 3600
     /// A release description is a few KB; anything much larger is not what we asked for.
     private static let maximumResponseSize = 512 * 1024
