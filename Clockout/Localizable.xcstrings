@@ -1,0 +1,5748 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "-" : {
+      "shouldTranslate" : false
+    },
+    "(+1 day)" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "(+1 Tag)"
+          }
+        }
+      }
+    },
+    "%@" : {
+      "shouldTranslate" : false
+    },
+    "%@ (⇧⌘S)" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ (⇧⌘S)"
+          }
+        }
+      }
+    },
+    "%@ %@" : {
+      "shouldTranslate" : false
+    },
+    "%@ h" : {
+      "shouldTranslate" : false
+    },
+    "%@ h %@" : {
+      "shouldTranslate" : false
+    },
+    "%@ h per workday" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ h pro Arbeitstag"
+          }
+        }
+      }
+    },
+    "%@ h worked" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ h gearbeitet"
+          }
+        }
+      }
+    },
+    "%@ hours for %@ today." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Heute %@ Stunden für %@."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ hours for %2$@ today."
+          }
+        }
+      }
+    },
+    "%@ is dark only" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ gibt es nur dunkel"
+          }
+        }
+      }
+    },
+    "%@ is light only" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ gibt es nur hell"
+          }
+        }
+      }
+    },
+    "%@ is on a break (%@)." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ ist gerade in der Pause (%@)."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ is on a break (%2$@)."
+          }
+        }
+      }
+    },
+    "%@ is running" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ läuft gerade"
+          }
+        }
+      }
+    },
+    "%@ is running (%@). Starting here ends that work block." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ läuft (%@). Starten hier beendet diesen Arbeitsblock."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ is running (%2$@). Starting here ends that work block."
+          }
+        }
+      }
+    },
+    "%@ of %@ hours for %@ today." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Heute %@ von %@ Stunden für %@."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ of %2$@ hours for %3$@ today."
+          }
+        }
+      }
+    },
+    "%@ to %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ bis %@"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ to %2$@"
+          }
+        }
+      }
+    },
+    "%@ to %@, break %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ bis %@, Pause %@"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ to %2$@, break %3$@"
+          }
+        }
+      }
+    },
+    "%@ to %@%@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ bis %@%@"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ to %2$@%3$@"
+          }
+        }
+      }
+    },
+    "%@ until now" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ bis jetzt"
+          }
+        }
+      }
+    },
+    "%@ with %@ h will be imported." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ mit %@ h werden importiert."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ with %2$@ h will be imported."
+          }
+        }
+      }
+    },
+    "%@, no target" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@, kein Soll"
+          }
+        }
+      }
+    },
+    "%@: %@" : {
+      "shouldTranslate" : false
+    },
+    "%@: e.g. %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@: z. B. %@"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@: e.g. %2$@"
+          }
+        }
+      }
+    },
+    "%@: no target for %@ today" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@: heute kein Soll für %@"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@: no target for %2$@ today"
+          }
+        }
+      }
+    },
+    "%@: no target; tracked time still counts." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@: kein Soll; erfasste Zeit zählt trotzdem."
+          }
+        }
+      }
+    },
+    "%lld" : {
+      "shouldTranslate" : false
+    },
+    "%lld absence days" : {
+      "localizations" : {
+        "de" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld Abwesenheitstag"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld Abwesenheitstage"
+                }
+              }
+            }
+          }
+        },
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld absence day"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld absence days"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "%lld days" : {
+      "localizations" : {
+        "de" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld Tag"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld Tage"
+                }
+              }
+            }
+          }
+        },
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld day"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld days"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "%lld days absent" : {
+      "localizations" : {
+        "de" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld Tag abwesend"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld Tage abwesend"
+                }
+              }
+            }
+          }
+        },
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld day absent"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld days absent"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "%lld days ago" : {
+      "localizations" : {
+        "de" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Vor %lld Tag"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Vor %lld Tagen"
+                }
+              }
+            }
+          }
+        },
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld day ago"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld days ago"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "%lld days are already tracked and will be skipped." : {
+      "localizations" : {
+        "de" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld Tag ist schon erfasst und wird übersprungen."
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld Tage sind schon erfasst und werden übersprungen."
+                }
+              }
+            }
+          }
+        },
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld day is already tracked and will be skipped."
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld days are already tracked and will be skipped."
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "%lld days tracked" : {
+      "localizations" : {
+        "de" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld Tag erfasst"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld Tage erfasst"
+                }
+              }
+            }
+          }
+        },
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld day tracked"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld days tracked"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "%lld days were skipped because they were already tracked." : {
+      "localizations" : {
+        "de" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld Tag wurde übersprungen, weil er schon erfasst war."
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld Tage wurden übersprungen, weil sie schon erfasst waren."
+                }
+              }
+            }
+          }
+        },
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld day was skipped because it was already tracked."
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld days were skipped because they were already tracked."
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "%lld days without target; work on them still counts." : {
+      "localizations" : {
+        "de" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld Tag ohne Soll; Arbeit daran zählt trotzdem."
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld Tage ohne Soll; Arbeit daran zählt trotzdem."
+                }
+              }
+            }
+          }
+        },
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld day without target; work on it still counts."
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld days without target; work on them still counts."
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "%lld h" : {
+      "shouldTranslate" : false
+    },
+    "%lld holidays" : {
+      "localizations" : {
+        "de" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld Feiertag"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld Feiertage"
+                }
+              }
+            }
+          }
+        },
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld holiday"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld holidays"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "%lld jobs" : {
+      "localizations" : {
+        "de" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld Job"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld Jobs"
+                }
+              }
+            }
+          }
+        },
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld job"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld jobs"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "%lld rows" : {
+      "localizations" : {
+        "de" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld Zeile"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld Zeilen"
+                }
+              }
+            }
+          }
+        },
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld row"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld rows"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "%lld rows cannot be read and will be ignored." : {
+      "localizations" : {
+        "de" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld Zeile kann nicht gelesen werden und wird ignoriert."
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld Zeilen können nicht gelesen werden und werden ignoriert."
+                }
+              }
+            }
+          }
+        },
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld row cannot be read and will be ignored."
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld rows cannot be read and will be ignored."
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "%lld work blocks" : {
+      "localizations" : {
+        "de" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld Arbeitsblock"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld Arbeitsblöcke"
+                }
+              }
+            }
+          }
+        },
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld work block"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld work blocks"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "%lld%%" : {
+      "shouldTranslate" : false
+    },
+    "⌘%lld" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "⌘%lld"
+          }
+        }
+      }
+    },
+    "5 minutes" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "5 Minuten"
+          }
+        }
+      }
+    },
+    "10 minutes" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "10 Minuten"
+          }
+        }
+      }
+    },
+    "15 minutes" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "15 Minuten"
+          }
+        }
+      }
+    },
+    "30 minutes" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "30 Minuten"
+          }
+        }
+      }
+    },
+    "A work block can’t exceed 24 hours" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ein Arbeitsblock darf höchstens 24 Stunden dauern"
+          }
+        }
+      }
+    },
+    "Absence" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abwesenheit"
+          }
+        }
+      }
+    },
+    "Absence for %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abwesenheit für %@"
+          }
+        }
+      }
+    },
+    "Accent Color" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Akzentfarbe"
+          }
+        }
+      }
+    },
+    "Actual times" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tatsächliche Zeiten"
+          }
+        }
+      }
+    },
+    "Add Absence" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eintragen"
+          }
+        }
+      }
+    },
+    "Add as well" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zusätzlich hinzufügen"
+          }
+        }
+      }
+    },
+    "Add Job" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Job hinzufügen"
+          }
+        }
+      }
+    },
+    "Add vacation or sick days" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Urlaub oder Krankheit eintragen"
+          }
+        }
+      }
+    },
+    "Add Work Block" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Arbeitsblock hinzufügen"
+          }
+        }
+      }
+    },
+    "after %@ h straight" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "nach %@ h am Stück"
+          }
+        }
+      }
+    },
+    "after %lld minutes" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "nach %lld Minuten"
+          }
+        }
+      }
+    },
+    "All Saints' Day" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Allerheiligen"
+          }
+        }
+      }
+    },
+    "all workdays" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "alle Arbeitstage"
+          }
+        }
+      }
+    },
+    "Already tracked" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schon erfasst"
+          }
+        }
+      }
+    },
+    "Appearance" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Darstellung"
+          }
+        }
+      }
+    },
+    "Appearance mode" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erscheinungsbild"
+          }
+        }
+      }
+    },
+    "Approach" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vorgehen"
+          }
+        }
+      }
+    },
+    "As of" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stand am"
+          }
+        }
+      }
+    },
+    "Ascension Day" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Christi Himmelfahrt"
+          }
+        }
+      }
+    },
+    "Ask about idle time" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bei Leerlauf fragen"
+          }
+        }
+      }
+    },
+    "Asks GitHub once a day; nothing about you or your hours is sent." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fragt einmal täglich bei GitHub nach; nichts über dich oder deine Stunden wird gesendet."
+          }
+        }
+      }
+    },
+    "Asks whether idle time while the timer ran was a break." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fragt, ob Leerlauf bei laufendem Timer eine Pause war."
+          }
+        }
+      }
+    },
+    "Assumption Day" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mariä Himmelfahrt"
+          }
+        }
+      }
+    },
+    "Austria" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Österreich"
+          }
+        }
+      }
+    },
+    "Austrian National Day" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nationalfeiertag"
+          }
+        }
+      }
+    },
+    "Automatic" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Automatisch"
+          }
+        }
+      }
+    },
+    "Average" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Durchschnitt"
+          }
+        }
+      }
+    },
+    "Backup" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Backup"
+          }
+        }
+      }
+    },
+    "Baden-Württemberg" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Baden-Württemberg"
+          }
+        }
+      }
+    },
+    "Balance" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saldo"
+          }
+        }
+      }
+    },
+    "Bavaria" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bayern"
+          }
+        }
+      }
+    },
+    "Berchtold's Day" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Berchtoldstag"
+          }
+        }
+      }
+    },
+    "Berlin" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Berlin"
+          }
+        }
+      }
+    },
+    "Block %lld" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Block %lld"
+          }
+        }
+      }
+    },
+    "Blue" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Blau"
+          }
+        }
+      }
+    },
+    "Boxing Day" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2. Weihnachtstag"
+          }
+        }
+      }
+    },
+    "Brandenburg" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brandenburg"
+          }
+        }
+      }
+    },
+    "Break" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pause"
+          }
+        }
+      }
+    },
+    "Break %@ to %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pause %@ bis %@"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Break %1$@ to %2$@"
+          }
+        }
+      }
+    },
+    "Break %@ to %@, %@ h" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pause %@ bis %@, %@ h"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Break %1$@ to %2$@, %3$@ h"
+          }
+        }
+      }
+    },
+    "Break given in" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pause angegeben in"
+          }
+        }
+      }
+    },
+    "Break is longer than the time present" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pause ist länger als die Anwesenheit"
+          }
+        }
+      }
+    },
+    "Break not readable: %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pause nicht lesbar: %@"
+          }
+        }
+      }
+    },
+    "Break reminder" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pausenerinnerung"
+          }
+        }
+      }
+    },
+    "Break since %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pause seit %@"
+          }
+        }
+      }
+    },
+    "Break since %@: %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pause seit %@: %@"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Break since %1$@: %2$@"
+          }
+        }
+      }
+    },
+    "Break started." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pause gestartet."
+          }
+        }
+      }
+    },
+    "Breaks" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pausen"
+          }
+        }
+      }
+    },
+    "Bremen" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bremen"
+          }
+        }
+      }
+    },
+    "Can’t read the file. Check that it’s a CSV or Excel file." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Datei nicht lesbar. Prüfe, ob es eine CSV- oder Excel-Datei ist."
+          }
+        }
+      }
+    },
+    "Can’t read this picture. Try PNG or JPEG." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bild nicht lesbar. Versuche PNG oder JPEG."
+          }
+        }
+      }
+    },
+    "Cancel" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abbrechen"
+          }
+        }
+      }
+    },
+    "Carry-over" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Übertrag"
+          }
+        }
+      }
+    },
+    "Carry-over for %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saldo-Übertrag für %@"
+          }
+        }
+      }
+    },
+    "Check for updates" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nach Updates suchen"
+          }
+        }
+      }
+    },
+    "Check Now" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jetzt prüfen"
+          }
+        }
+      }
+    },
+    "Checking…" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wird geprüft…"
+          }
+        }
+      }
+    },
+    "Choose a day on the left." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wähle links einen Tag aus."
+          }
+        }
+      }
+    },
+    "Choose any color" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beliebige Farbe wählen"
+          }
+        }
+      }
+    },
+    "Choose date" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Datum wählen"
+          }
+        }
+      }
+    },
+    "Choose File…" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Datei auswählen…"
+          }
+        }
+      }
+    },
+    "Choose Picture…" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bild wählen…"
+          }
+        }
+      }
+    },
+    "Choose the columns for date, start and end on the left." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wähle links die Spalten für Datum, Beginn und Ende."
+          }
+        }
+      }
+    },
+    "Christmas Day" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1. Weihnachtstag"
+          }
+        }
+      }
+    },
+    "Clear Range" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zeitraum leeren"
+          }
+        }
+      }
+    },
+    "Clockout" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clockout"
+          }
+        }
+      }
+    },
+    "Color" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Farbe"
+          }
+        }
+      }
+    },
+    "Column %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spalte %@"
+          }
+        }
+      }
+    },
+    "Combines %lld work blocks: first start, gaps as break." : {
+      "localizations" : {
+        "de" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Fasst %lld Arbeitsblock zusammen: erster Start, Lücken als Pause."
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Fasst %lld Arbeitsblöcke zusammen: erster Start, Lücken als Pause."
+                }
+              }
+            }
+          }
+        },
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Combines %lld work block: first start, gaps as break."
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Combines %lld work blocks: first start, gaps as break."
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Copied" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kopiert"
+          }
+        }
+      }
+    },
+    "Copy" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kopieren"
+          }
+        }
+      }
+    },
+    "Copy %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ kopieren"
+          }
+        }
+      }
+    },
+    "Copy All" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alles kopieren"
+          }
+        }
+      }
+    },
+    "Copy as Table Row" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Als Tabellenzeile kopieren"
+          }
+        }
+      }
+    },
+    "Copy as Text" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Als Text kopieren"
+          }
+        }
+      }
+    },
+    "Copy rules from “%@”" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Regeln von „%@“ übernehmen"
+          }
+        }
+      }
+    },
+    "Copy start, end and break" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beginn, Ende und Pause kopieren"
+          }
+        }
+      }
+    },
+    "Copy Table" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tabelle kopieren"
+          }
+        }
+      }
+    },
+    "Corpus Christi" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fronleichnam"
+          }
+        }
+      }
+    },
+    "Couldn’t change the login item: %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anmeldeobjekt nicht geändert: %@"
+          }
+        }
+      }
+    },
+    "Couldn’t get your location. Choose a country." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Standort nicht ermittelbar. Wähle ein Land."
+          }
+        }
+      }
+    },
+    "Couldn’t reach GitHub. Try again later." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "GitHub nicht erreichbar. Versuche es später erneut."
+          }
+        }
+      }
+    },
+    "Couldn’t restore the backup: %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Backup nicht wiederhergestellt: %@"
+          }
+        }
+      }
+    },
+    "Country" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Land"
+          }
+        }
+      }
+    },
+    "Create" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anlegen"
+          }
+        }
+      }
+    },
+    "Create…" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erstellen…"
+          }
+        }
+      }
+    },
+    "Current block since %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aktueller Block seit %@"
+          }
+        }
+      }
+    },
+    "Current block: %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aktueller Block: %@"
+          }
+        }
+      }
+    },
+    "Custom accent color" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eigene Akzentfarbe"
+          }
+        }
+      }
+    },
+    "Custom Color" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eigene Farbe"
+          }
+        }
+      }
+    },
+    "Dark" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dunkel"
+          }
+        }
+      }
+    },
+    "Data" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Daten"
+          }
+        }
+      }
+    },
+    "Date" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Datum"
+          }
+        }
+      }
+    },
+    "Date missing" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Datum fehlt"
+          }
+        }
+      }
+    },
+    "Date not readable: %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Datum nicht lesbar: %@"
+          }
+        }
+      }
+    },
+    "Day" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tag"
+          }
+        }
+      }
+    },
+    "Day of Repentance and Prayer" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Buß- und Bettag"
+          }
+        }
+      }
+    },
+    "Days" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tage"
+          }
+        }
+      }
+    },
+    "Days already tracked" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bereits erfasste Tage"
+          }
+        }
+      }
+    },
+    "Days for the timesheet" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tage für die Stundenliste"
+          }
+        }
+      }
+    },
+    "Decimal hours (0.5)" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dezimalstunden (0,5)"
+          }
+        }
+      }
+    },
+    "Decimal hours (0.50)" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dezimalstunden (0,50)"
+          }
+        }
+      }
+    },
+    "Delete “%@”?" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "„%@“ löschen?"
+          }
+        }
+      }
+    },
+    "Delete All Work Blocks?" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alle Arbeitsblöcke löschen?"
+          }
+        }
+      }
+    },
+    "Delete All…" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alle löschen…"
+          }
+        }
+      }
+    },
+    "Delete Job" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Job löschen"
+          }
+        }
+      }
+    },
+    "Delete Work Block" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Arbeitsblock löschen"
+          }
+        }
+      }
+    },
+    "Delete Work Block?" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Arbeitsblock löschen?"
+          }
+        }
+      }
+    },
+    "Delete Work Blocks" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Arbeitsblöcke löschen"
+          }
+        }
+      }
+    },
+    "Delete…" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Löschen…"
+          }
+        }
+      }
+    },
+    "Deletes all %lld work blocks for good; jobs and their rules stay." : {
+      "localizations" : {
+        "de" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Löscht den %lld Arbeitsblock endgültig; Jobs und ihre Regeln bleiben."
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Löscht alle %lld Arbeitsblöcke endgültig; Jobs und ihre Regeln bleiben."
+                }
+              }
+            }
+          }
+        },
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Deletes the %lld work block for good; jobs and their rules stay."
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Deletes all %lld work blocks for good; jobs and their rules stay."
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Deletes the job and its %lld work blocks. This can’t be undone." : {
+      "localizations" : {
+        "de" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Löscht den Job und seinen %lld Arbeitsblock. Das lässt sich nicht rückgängig machen."
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Löscht den Job und seine %lld Arbeitsblöcke. Das lässt sich nicht rückgängig machen."
+                }
+              }
+            }
+          }
+        },
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Deletes the job and its %lld work block. This can’t be undone."
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Deletes the job and its %lld work blocks. This can’t be undone."
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Detecting…" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wird erkannt…"
+          }
+        }
+      }
+    },
+    "Done for today: %@ hours for %@." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Feierabend. Heute %@ Stunden für %@."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Done for today: %1$@ hours for %2$@."
+          }
+        }
+      }
+    },
+    "Download" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Laden"
+          }
+        }
+      }
+    },
+    "Download %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ laden"
+          }
+        }
+      }
+    },
+    "Drop a .csv or .xlsx file here, such as your timesheet or an export from this app." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ziehe eine .csv- oder .xlsx-Datei hierher, etwa deine Stundenliste oder einen Export dieser App."
+          }
+        }
+      }
+    },
+    "Drop a picture here" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bild hierher ziehen"
+          }
+        }
+      }
+    },
+    "Duration" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dauer"
+          }
+        }
+      }
+    },
+    "e.g. project or task" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "z. B. Projekt oder Tätigkeit"
+          }
+        }
+      }
+    },
+    "e.g. Student job" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "z. B. Werkstudent"
+          }
+        }
+      }
+    },
+    "e.g. student job, mini job, freelance" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "z. B. Werkstudent, Minijob, Freelance"
+          }
+        }
+      }
+    },
+    "e.g. student job, part-time job, freelance" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "z. B. Werkstudent, Minijob, Hiwi"
+          }
+        }
+      }
+    },
+    "Easter Monday" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ostermontag"
+          }
+        }
+      }
+    },
+    "Easter Sunday" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ostersonntag"
+          }
+        }
+      }
+    },
+    "Edit" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bearbeiten"
+          }
+        }
+      }
+    },
+    "Edit Work Block" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Arbeitsblock bearbeiten"
+          }
+        }
+      }
+    },
+    "Edit…" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bearbeiten…"
+          }
+        }
+      }
+    },
+    "Enable notifications" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Benachrichtigungen aktivieren"
+          }
+        }
+      }
+    },
+    "End missing" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ende fehlt"
+          }
+        }
+      }
+    },
+    "End must be after start" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ende muss nach dem Beginn liegen"
+          }
+        }
+      }
+    },
+    "End not readable: %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ende nicht lesbar: %@"
+          }
+        }
+      }
+    },
+    "End time" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ende"
+          }
+        }
+      }
+    },
+    "Ends the working day." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beendet den Arbeitstag."
+          }
+        }
+      }
+    },
+    "Enter break as" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pause angeben als"
+          }
+        }
+      }
+    },
+    "Epiphany" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Heilige Drei Könige"
+          }
+        }
+      }
+    },
+    "Exact to the minute" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Minutengenau"
+          }
+        }
+      }
+    },
+    "excluding %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ohne %@"
+          }
+        }
+      }
+    },
+    "excluding %@ and %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ohne %@ und %@"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "excluding %1$@ and %2$@"
+          }
+        }
+      }
+    },
+    "Existing work blocks were replaced on %lld days." : {
+      "localizations" : {
+        "de" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Bei %lld Tag wurden die vorhandenen Arbeitsblöcke ersetzt."
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Bei %lld Tagen wurden die vorhandenen Arbeitsblöcke ersetzt."
+                }
+              }
+            }
+          }
+        },
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Existing work blocks were replaced on %lld day."
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Existing work blocks were replaced on %lld days."
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Export" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Exportieren"
+          }
+        }
+      }
+    },
+    "Export as CSV" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Als CSV exportieren"
+          }
+        }
+      }
+    },
+    "Export…" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Exportieren…"
+          }
+        }
+      }
+    },
+    "Finish Day" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Feierabend"
+          }
+        }
+      }
+    },
+    "Finish day (⇧⌘E)" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Feierabend (⇧⌘E)"
+          }
+        }
+      }
+    },
+    "Finish day at %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Feierabend um %@"
+          }
+        }
+      }
+    },
+    "First day of work" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Arbeitsbeginn"
+          }
+        }
+      }
+    },
+    "follows automatically" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ergibt sich automatisch"
+          }
+        }
+      }
+    },
+    "For the timesheet" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Für die Stundenliste"
+          }
+        }
+      }
+    },
+    "From" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Von"
+          }
+        }
+      }
+    },
+    "From %@ to %@, while the timer ran." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Von %@ bis %@, während der Timer lief."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "From %1$@ to %2$@, while the timer ran."
+          }
+        }
+      }
+    },
+    "From your location" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Über deinen Standort"
+          }
+        }
+      }
+    },
+    "From your system region; change it in Settings > Jobs > Holidays." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aus deiner Systemregion; ändern unter Einstellungen > Jobs > Feiertage."
+          }
+        }
+      }
+    },
+    "General" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Allgemein"
+          }
+        }
+      }
+    },
+    "German law requires a break after 6 hours of work." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nach 6 Stunden Arbeit ist eine Pause vorgeschrieben."
+          }
+        }
+      }
+    },
+    "German Unity Day" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tag der Deutschen Einheit"
+          }
+        }
+      }
+    },
+    "Germany" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deutschland"
+          }
+        }
+      }
+    },
+    "Germany (nationwide only)" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deutschland (nur bundesweite)"
+          }
+        }
+      }
+    },
+    "Get Started" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Loslegen"
+          }
+        }
+      }
+    },
+    "Good Friday" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Karfreitag"
+          }
+        }
+      }
+    },
+    "Graphite" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Grafit"
+          }
+        }
+      }
+    },
+    "Gray" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Grau"
+          }
+        }
+      }
+    },
+    "Green" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Grün"
+          }
+        }
+      }
+    },
+    "h" : {
+      "shouldTranslate" : false
+    },
+    "Hamburg" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hamburg"
+          }
+        }
+      }
+    },
+    "Headers in" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Überschriften in"
+          }
+        }
+      }
+    },
+    "Hesse" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hessen"
+          }
+        }
+      }
+    },
+    "History" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verlauf"
+          }
+        }
+      }
+    },
+    "Holiday" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Feiertag"
+          }
+        }
+      }
+    },
+    "holiday.ascension.ch" : {
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Auffahrt"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ascension Day"
+          }
+        }
+      }
+    },
+    "holiday.christmas.at" : {
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Christtag"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Christmas Day"
+          }
+        }
+      }
+    },
+    "holiday.christmas.ch" : {
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Weihnachten"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Christmas Day"
+          }
+        }
+      }
+    },
+    "holiday.stephen.at" : {
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stefanitag"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "St. Stephen's Day"
+          }
+        }
+      }
+    },
+    "Holidays" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Feiertage"
+          }
+        }
+      }
+    },
+    "Holidays %@ in %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Feiertage %@ in %@"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Holidays %1$@ in %2$@"
+          }
+        }
+      }
+    },
+    "Holidays have no target; hours tracked on them still count." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Feiertage haben kein Soll; erfasste Stunden zählen trotzdem."
+          }
+        }
+      }
+    },
+    "Hours" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stunden"
+          }
+        }
+      }
+    },
+    "Hours per day" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stunden pro Tag"
+          }
+        }
+      }
+    },
+    "Hours per week" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stunden pro Woche"
+          }
+        }
+      }
+    },
+    "Hours Worked" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gearbeitete Stunden"
+          }
+        }
+      }
+    },
+    "Hours Worked Today" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Heutige Arbeitszeit"
+          }
+        }
+      }
+    },
+    "Hours:minutes (0:30)" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stunden:Minuten (0:30)"
+          }
+        }
+      }
+    },
+    "Hours:minutes (00:30)" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stunden:Minuten (00:30)"
+          }
+        }
+      }
+    },
+    "Immaculate Conception" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mariä Empfängnis"
+          }
+        }
+      }
+    },
+    "Import" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Importieren"
+          }
+        }
+      }
+    },
+    "Import %lld days" : {
+      "localizations" : {
+        "de" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld Tag importieren"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld Tage importieren"
+                }
+              }
+            }
+          }
+        },
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Import %lld day"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Import %lld days"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Import Finished" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Import abgeschlossen"
+          }
+        }
+      }
+    },
+    "Import hours from CSV or Excel" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stunden aus CSV oder Excel importieren"
+          }
+        }
+      }
+    },
+    "Import Hours…" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stunden importieren…"
+          }
+        }
+      }
+    },
+    "Import into" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Import in"
+          }
+        }
+      }
+    },
+    "Imported %@ %@." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ %@ importiert."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Imported %1$@ %2$@."
+          }
+        }
+      }
+    },
+    "In %lld days" : {
+      "localizations" : {
+        "de" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "In %lld Tag"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "In %lld Tagen"
+                }
+              }
+            }
+          }
+        },
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "In %lld day"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "In %lld days"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "in this period" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "in diesem Zeitraum"
+          }
+        }
+      }
+    },
+    "incl. carry-over %@ h" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "inkl. Übertrag %@ h"
+          }
+        }
+      }
+    },
+    "Include untracked workdays" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Arbeitstage ohne Erfassung einschließen"
+          }
+        }
+      }
+    },
+    "Includes all jobs, rules and work blocks; restoring replaces everything on this Mac." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enthält alle Jobs, Regeln und Arbeitsblöcke; Wiederherstellen ersetzt alles auf diesem Mac."
+          }
+        }
+      }
+    },
+    "Indigo" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Indigo"
+          }
+        }
+      }
+    },
+    "International Women's Day" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Internationaler Frauentag"
+          }
+        }
+      }
+    },
+    "Job" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Job"
+          }
+        }
+      }
+    },
+    "Jobs" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jobs"
+          }
+        }
+      }
+    },
+    "Jump to today" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zu heute springen"
+          }
+        }
+      }
+    },
+    "Keep Counting" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Weiterzählen"
+          }
+        }
+      }
+    },
+    "Labour Day" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tag der Arbeit"
+          }
+        }
+      }
+    },
+    "Language" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sprache"
+          }
+        }
+      }
+    },
+    "Last finished" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zuletzt beendet"
+          }
+        }
+      }
+    },
+    "Last Month" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Letzter Monat"
+          }
+        }
+      }
+    },
+    "Leave empty for the last selected job." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leer lassen für den zuletzt gewählten Job."
+          }
+        }
+      }
+    },
+    "Light" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hell"
+          }
+        }
+      }
+    },
+    "Locally on this Mac" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lokal auf diesem Mac"
+          }
+        }
+      }
+    },
+    "Location access is off for Clockout. Allow it in System Settings." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clockout darf deinen Standort nicht verwenden. Erlaube es in den Systemeinstellungen."
+          }
+        }
+      }
+    },
+    "Location Services are off. Turn them on in System Settings." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die Ortungsdienste sind aus. Schalte sie in den Systemeinstellungen ein."
+          }
+        }
+      }
+    },
+    "Lower Saxony" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Niedersachsen"
+          }
+        }
+      }
+    },
+    "Main job" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hauptjob"
+          }
+        }
+      }
+    },
+    "Manage Jobs…" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jobs verwalten…"
+          }
+        }
+      }
+    },
+    "Map Columns" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spalten zuordnen"
+          }
+        }
+      }
+    },
+    "Mark as day off" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Als freien Tag markieren"
+          }
+        }
+      }
+    },
+    "Mecklenburg-Western Pomerania" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mecklenburg-Vorpommern"
+          }
+        }
+      }
+    },
+    "Minus" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Minus"
+          }
+        }
+      }
+    },
+    "Minutes (30)" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Minuten (30)"
+          }
+        }
+      }
+    },
+    "Month" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Monat"
+          }
+        }
+      }
+    },
+    "Months" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Monate"
+          }
+        }
+      }
+    },
+    "More than %lld h of work needs %lld min of break in parts of at least 15 min (§ 4 ArbZG). Counted: %@ h." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mehr als %lld h Arbeit brauchen %lld min Pause in Abschnitten ab 15 min (§ 4 ArbZG). Angerechnet: %@ h."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "More than %1$lld h of work needs %2$lld min of break in parts of at least 15 min (§ 4 ArbZG). Counted: %3$@ h."
+          }
+        }
+      }
+    },
+    "Move Down" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nach unten"
+          }
+        }
+      }
+    },
+    "Move Up" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nach oben"
+          }
+        }
+      }
+    },
+    "Name" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Name"
+          }
+        }
+      }
+    },
+    "Nationwide only" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nur bundesweite"
+          }
+        }
+      }
+    },
+    "Needs approval in System Settings" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Braucht Freigabe in den Systemeinstellungen"
+          }
+        }
+      }
+    },
+    "Needs date, start and end, or the work blocks column of an export." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Braucht Datum, Beginn und Ende oder die Spalte Arbeitsblöcke eines Exports."
+          }
+        }
+      }
+    },
+    "New" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Neu"
+          }
+        }
+      }
+    },
+    "New job" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Neuer Job"
+          }
+        }
+      }
+    },
+    "New Job" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Neuer Job"
+          }
+        }
+      }
+    },
+    "New Job…" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Neuer Job…"
+          }
+        }
+      }
+    },
+    "New Year's Day" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Neujahr"
+          }
+        }
+      }
+    },
+    "Next Month" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nächster Monat"
+          }
+        }
+      }
+    },
+    "Next period" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nächster Zeitraum"
+          }
+        }
+      }
+    },
+    "No Absence" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Keine Abwesenheit"
+          }
+        }
+      }
+    },
+    "No built-in holidays for your location. Choose a country." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Für deinen Standort gibt es keine eingebauten Feiertage. Wähle ein Land."
+          }
+        }
+      }
+    },
+    "No day selected" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kein Tag ausgewählt"
+          }
+        }
+      }
+    },
+    "No header row" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Keine Kopfzeile"
+          }
+        }
+      }
+    },
+    "No rows found" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Keine Zeilen gefunden"
+          }
+        }
+      }
+    },
+    "No target before your first day of work (%@)." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kein Soll vor deinem Arbeitsbeginn (%@)."
+          }
+        }
+      }
+    },
+    "No target for this day" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kein Soll für diesen Tag"
+          }
+        }
+      }
+    },
+    "No timer is running." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Es läuft gerade kein Timer."
+          }
+        }
+      }
+    },
+    "No work blocks" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Keine Arbeitsblöcke"
+          }
+        }
+      }
+    },
+    "none" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "keine"
+          }
+        }
+      }
+    },
+    "None" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Keins"
+          }
+        }
+      }
+    },
+    "North Rhine-Westphalia" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nordrhein-Westfalen"
+          }
+        }
+      }
+    },
+    "Not a valid Excel file. Save it again as .xlsx or .csv." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Keine gültige Excel-Datei. Speichere sie erneut als .xlsx oder .csv."
+          }
+        }
+      }
+    },
+    "Not a workday for %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kein Arbeitstag für %@"
+          }
+        }
+      }
+    },
+    "Not detected" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nicht erkannt"
+          }
+        }
+      }
+    },
+    "Not present" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nicht vorhanden"
+          }
+        }
+      }
+    },
+    "Not set" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nicht festgelegt"
+          }
+        }
+      }
+    },
+    "Not started today" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Heute noch nicht gestartet"
+          }
+        }
+      }
+    },
+    "Not started yet" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Noch nicht gestartet"
+          }
+        }
+      }
+    },
+    "Note" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notiz"
+          }
+        }
+      }
+    },
+    "Nothing to copy yet" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Noch nichts zum Übertragen"
+          }
+        }
+      }
+    },
+    "Nothing to import." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nichts zu importieren."
+          }
+        }
+      }
+    },
+    "Nothing tracked" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nichts erfasst"
+          }
+        }
+      }
+    },
+    "Nothing tracked this month" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "In diesem Monat nichts erfasst"
+          }
+        }
+      }
+    },
+    "Nothing tracked yet" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Noch nichts erfasst"
+          }
+        }
+      }
+    },
+    "Notifications are off. Turn them on in System Settings." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mitteilungen sind aus. Schalte sie in den Systemeinstellungen ein."
+          }
+        }
+      }
+    },
+    "Now" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jetzt"
+          }
+        }
+      }
+    },
+    "of target" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "vom Soll"
+          }
+        }
+      }
+    },
+    "Off" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aus"
+          }
+        }
+      }
+    },
+    "OK" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        }
+      }
+    },
+    "on %lld days" : {
+      "localizations" : {
+        "de" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "an %lld Tag"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "an %lld Tagen"
+                }
+              }
+            }
+          }
+        },
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "on %lld day"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "on %lld days"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "On break" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pause"
+          }
+        }
+      }
+    },
+    "only tracked days" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "nur erfasste Tage"
+          }
+        }
+      }
+    },
+    "Open at login" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beim Anmelden automatisch öffnen"
+          }
+        }
+      }
+    },
+    "Open Login Items" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anmeldeobjekte öffnen"
+          }
+        }
+      }
+    },
+    "Open System Settings" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Systemeinstellungen öffnen"
+          }
+        }
+      }
+    },
+    "Open Window" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fenster öffnen"
+          }
+        }
+      }
+    },
+    "Orange" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Orange"
+          }
+        }
+      }
+    },
+    "Other File…" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Andere Datei…"
+          }
+        }
+      }
+    },
+    "Other Picture…" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anderes Bild…"
+          }
+        }
+      }
+    },
+    "Over the 10-hour daily maximum (§ 3 ArbZG)" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Über der Tageshöchstzeit von 10 Stunden (§ 3 ArbZG)"
+          }
+        }
+      }
+    },
+    "Pause" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pause"
+          }
+        }
+      }
+    },
+    "Pauses the running timer." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pausiert den laufenden Timer."
+          }
+        }
+      }
+    },
+    "Per day" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pro Tag"
+          }
+        }
+      }
+    },
+    "per tracked day" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "pro erfasstem Tag"
+          }
+        }
+      }
+    },
+    "Per week" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pro Woche"
+          }
+        }
+      }
+    },
+    "Picture" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bild"
+          }
+        }
+      }
+    },
+    "Pink" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rosa"
+          }
+        }
+      }
+    },
+    "Places the break mid-day; start, end and working time stay exact." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Legt die Pause in die Tagesmitte; Beginn, Ende und Arbeitszeit bleiben exakt."
+          }
+        }
+      }
+    },
+    "Plus" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Plus"
+          }
+        }
+      }
+    },
+    "PNG, JPEG or HEIC, cropped to a square" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PNG, JPEG oder HEIC, quadratisch zugeschnitten"
+          }
+        }
+      }
+    },
+    "Presence" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anwesenheit"
+          }
+        }
+      }
+    },
+    "Preview" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vorschau"
+          }
+        }
+      }
+    },
+    "Previous Month" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vorheriger Monat"
+          }
+        }
+      }
+    },
+    "Previous period" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vorheriger Zeitraum"
+          }
+        }
+      }
+    },
+    "provisional, timer running" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "vorläufig, Timer läuft"
+          }
+        }
+      }
+    },
+    "Public holidays" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gesetzliche Feiertage"
+          }
+        }
+      }
+    },
+    "Purple" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lila"
+          }
+        }
+      }
+    },
+    "Quit (timer keeps running)" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beenden (Timer läuft weiter)"
+          }
+        }
+      }
+    },
+    "Quitting keeps the timer in the menu bar; its power button quits fully." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beenden lässt den Timer in der Menüleiste; ganz beenden über den Ein/Aus-Knopf dort."
+          }
+        }
+      }
+    },
+    "Range" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zeitraum"
+          }
+        }
+      }
+    },
+    "Ready" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bereit"
+          }
+        }
+      }
+    },
+    "Red" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rot"
+          }
+        }
+      }
+    },
+    "Reformation Day" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reformationstag"
+          }
+        }
+      }
+    },
+    "Reminders" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erinnerungen"
+          }
+        }
+      }
+    },
+    "Remove" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Entfernen"
+          }
+        }
+      }
+    },
+    "Remove all absences in this range" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alle Abwesenheiten in diesem Zeitraum entfernen"
+          }
+        }
+      }
+    },
+    "Remove date" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Datum entfernen"
+          }
+        }
+      }
+    },
+    "Replace existing work blocks" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vorhandene Arbeitsblöcke ersetzen"
+          }
+        }
+      }
+    },
+    "Replaces all jobs and work blocks with the backup from %@ (%@, %@)." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ersetzt alle Jobs und Arbeitsblöcke durch das Backup vom %@ (%@, %@)."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Replaces all jobs and work blocks with the backup from %1$@ (%2$@, %3$@)."
+          }
+        }
+      }
+    },
+    "Replaces work blocks" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ersetzt Arbeitsblöcke"
+          }
+        }
+      }
+    },
+    "Required breaks and the 10-hour limit (German ArbZG)" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pflichtpausen und 10-Stunden-Grenze (ArbZG)"
+          }
+        }
+      }
+    },
+    "Restart Now" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jetzt neu starten"
+          }
+        }
+      }
+    },
+    "Restore" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wiederherstellen"
+          }
+        }
+      }
+    },
+    "Restore Backup?" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Backup wiederherstellen?"
+          }
+        }
+      }
+    },
+    "Restore…" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wiederherstellen…"
+          }
+        }
+      }
+    },
+    "Restored backup from %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Backup vom %@ wiederhergestellt"
+          }
+        }
+      }
+    },
+    "Resume" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fortsetzen"
+          }
+        }
+      }
+    },
+    "Rhineland-Palatinate" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rheinland-Pfalz"
+          }
+        }
+      }
+    },
+    "Rounded to %lld min (tracked: %@ h work, %@ h break)." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gerundet auf %lld min (erfasst: %@ h Arbeit, %@ h Pause)."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rounded to %1$lld min (tracked: %2$@ h work, %3$@ h break)."
+          }
+        }
+      }
+    },
+    "Rounding" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rundung"
+          }
+        }
+      }
+    },
+    "Rounds start, working time and break; the end follows from them." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rundet Beginn, Arbeitszeit und Pause; das Ende ergibt sich daraus."
+          }
+        }
+      }
+    },
+    "Row" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zeile"
+          }
+        }
+      }
+    },
+    "Row %lld" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zeile %lld"
+          }
+        }
+      }
+    },
+    "Running" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Läuft"
+          }
+        }
+      }
+    },
+    "Saarland" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saarland"
+          }
+        }
+      }
+    },
+    "Save" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sichern"
+          }
+        }
+      }
+    },
+    "Saxony" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sachsen"
+          }
+        }
+      }
+    },
+    "Saxony-Anhalt" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sachsen-Anhalt"
+          }
+        }
+      }
+    },
+    "Schleswig-Holstein" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schleswig-Holstein"
+          }
+        }
+      }
+    },
+    "Set" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Festlegen"
+          }
+        }
+      }
+    },
+    "Set carry-over" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saldo-Übertrag festlegen"
+          }
+        }
+      }
+    },
+    "Set End…" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ende festlegen…"
+          }
+        }
+      }
+    },
+    "Set up your first job so target and balance are right; change it later in Settings." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Richte deinen ersten Job ein, damit Soll und Saldo stimmen; ändern kannst du alles später in den Einstellungen."
+          }
+        }
+      }
+    },
+    "Settings" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Einstellungen"
+          }
+        }
+      }
+    },
+    "Sheet" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tabellenblatt"
+          }
+        }
+      }
+    },
+    "Show" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anzeigen"
+          }
+        }
+      }
+    },
+    "Show timer in the menu bar" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Timer in der Menüleiste anzeigen"
+          }
+        }
+      }
+    },
+    "Show warnings" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Warnungen anzeigen"
+          }
+        }
+      }
+    },
+    "Sick" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Krank"
+          }
+        }
+      }
+    },
+    "since %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "seit %@"
+          }
+        }
+      }
+    },
+    "Skip" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Überspringen"
+          }
+        }
+      }
+    },
+    "Skip This Version" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Diese Version überspringen"
+          }
+        }
+      }
+    },
+    "St. Stephen's Day" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stephanstag"
+          }
+        }
+      }
+    },
+    "Start" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Starten"
+          }
+        }
+      }
+    },
+    "Start and end are the same" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beginn und Ende sind gleich"
+          }
+        }
+      }
+    },
+    "Start can’t be in the future" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beginn darf nicht in der Zukunft liegen"
+          }
+        }
+      }
+    },
+    "Start missing" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beginn fehlt"
+          }
+        }
+      }
+    },
+    "Start not readable: %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beginn nicht lesbar: %@"
+          }
+        }
+      }
+    },
+    "Start the timer or add a work block." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Starte den Timer oder füge einen Arbeitsblock hinzu."
+          }
+        }
+      }
+    },
+    "Start time" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beginn"
+          }
+        }
+      }
+    },
+    "Start Timer" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Timer starten"
+          }
+        }
+      }
+    },
+    "Start, end and break appear here once you track time." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beginn, Ende und Pause erscheinen hier, sobald du Zeit erfasst."
+          }
+        }
+      }
+    },
+    "Starting balance as of this date; earlier work blocks stay but no longer count." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Startsaldo zu diesem Datum; frühere Arbeitsblöcke bleiben, zählen aber nicht mehr."
+          }
+        }
+      }
+    },
+    "Starts or resumes time tracking. If another job is running, it is ended." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Startet oder setzt die Zeiterfassung fort. Läuft ein anderer Job, wird dieser beendet."
+          }
+        }
+      }
+    },
+    "Startup" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Start"
+          }
+        }
+      }
+    },
+    "State" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bundesland"
+          }
+        }
+      }
+    },
+    "State Holiday" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Staatsfeiertag"
+          }
+        }
+      }
+    },
+    "Statistics" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Auswertung"
+          }
+        }
+      }
+    },
+    "Status" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Status"
+          }
+        }
+      }
+    },
+    "Still running" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Läuft noch"
+          }
+        }
+      }
+    },
+    "Storage location" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Speicherort"
+          }
+        }
+      }
+    },
+    "Stored Data" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gespeicherte Daten"
+          }
+        }
+      }
+    },
+    "Swiss National Day" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bundesfeiertag"
+          }
+        }
+      }
+    },
+    "Switch job (⌘1 to ⌘9)" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Job wechseln (⌘1 bis ⌘9)"
+          }
+        }
+      }
+    },
+    "Switch to %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zu %@ wechseln"
+          }
+        }
+      }
+    },
+    "Switzerland" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schweiz"
+          }
+        }
+      }
+    },
+    "System" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "System"
+          }
+        }
+      }
+    },
+    "Take a Break" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pause machen"
+          }
+        }
+      }
+    },
+    "Take Off as Break" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Als Pause abziehen"
+          }
+        }
+      }
+    },
+    "Takes effect after a restart" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wirkt nach einem Neustart"
+          }
+        }
+      }
+    },
+    "Target" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Soll"
+          }
+        }
+      }
+    },
+    "Target %@ h" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Soll %@ h"
+          }
+        }
+      }
+    },
+    "Target %@ h, %@ h left" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Soll %@ h, noch %@ h offen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Target %1$@ h, %2$@ h left"
+          }
+        }
+      }
+    },
+    "Target %@ h, %@ h to go, reached at %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Soll %@ h, noch %@ h, erreicht um %@"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Target %1$@ h, %2$@ h to go, reached at %3$@"
+          }
+        }
+      }
+    },
+    "Target of %@ h reached, %@ h over" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Soll von %@ h erreicht, %@ h darüber"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Target of %1$@ h reached, %2$@ h over"
+          }
+        }
+      }
+    },
+    "Target only on tracked days" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Soll nur an erfassten Tagen"
+          }
+        }
+      }
+    },
+    "Target reached" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Soll erreicht"
+          }
+        }
+      }
+    },
+    "Target, workdays, rounding and break format" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Soll, Arbeitstage, Rundung und Pausenformat"
+          }
+        }
+      }
+    },
+    "Teal" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Türkis"
+          }
+        }
+      }
+    },
+    "Tells you how long you have worked today." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sagt, wie lange du heute gearbeitet hast."
+          }
+        }
+      }
+    },
+    "The file contains no times." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die Datei enthält keine Zeiten."
+          }
+        }
+      }
+    },
+    "The file is not a Clockout backup." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die Datei ist kein Backup von Clockout."
+          }
+        }
+      }
+    },
+    "The file is too large for a backup." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die Datei ist zu groß für ein Backup."
+          }
+        }
+      }
+    },
+    "The file is too large for a timesheet." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die Datei ist zu groß für einen Stundennachweis."
+          }
+        }
+      }
+    },
+    "The last job cannot be deleted" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Der letzte Job kann nicht gelöscht werden"
+          }
+        }
+      }
+    },
+    "The old .xls format isn’t supported. Save it in Excel as .xlsx or .csv." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Das alte .xls-Format wird nicht unterstützt. Speichere die Datei in Excel als .xlsx oder .csv."
+          }
+        }
+      }
+    },
+    "The timer kept running. Open Clockout to take the time off as a break." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Der Timer lief weiter. Öffne Clockout, um die Zeit als Pause abzuziehen."
+          }
+        }
+      }
+    },
+    "The work block from %@ can’t be restored." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Der Arbeitsblock ab %@ lässt sich nicht wiederherstellen."
+          }
+        }
+      }
+    },
+    "Theme" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Theme"
+          }
+        }
+      }
+    },
+    "Theme %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Theme %@"
+          }
+        }
+      }
+    },
+    "This backup is from a newer version. Update Clockout first." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Das Backup stammt aus einer neueren Version. Aktualisiere Clockout zuerst."
+          }
+        }
+      }
+    },
+    "This can’t be undone." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Das lässt sich nicht rückgängig machen."
+          }
+        }
+      }
+    },
+    "This Month" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dieser Monat"
+          }
+        }
+      }
+    },
+    "This sheet contains no times." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "In diesem Blatt stehen keine Zeiten."
+          }
+        }
+      }
+    },
+    "This Week" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Diese Woche"
+          }
+        }
+      }
+    },
+    "Thuringia" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thüringen"
+          }
+        }
+      }
+    },
+    "Time" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uhrzeit"
+          }
+        }
+      }
+    },
+    "Time for a break" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zeit für eine Pause"
+          }
+        }
+      }
+    },
+    "Time Tracking" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zeiterfassung"
+          }
+        }
+      }
+    },
+    "Timeline" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tagesverlauf"
+          }
+        }
+      }
+    },
+    "Timer for %@ is running." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Timer für %@ läuft."
+          }
+        }
+      }
+    },
+    "Timer running since %@, %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Timer läuft seit %@, %@"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Timer running since %1$@, %2$@"
+          }
+        }
+      }
+    },
+    "Timesheet" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stundenliste"
+          }
+        }
+      }
+    },
+    "To" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bis"
+          }
+        }
+      }
+    },
+    "Today" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Heute"
+          }
+        }
+      }
+    },
+    "Today · %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Heute · %@"
+          }
+        }
+      }
+    },
+    "Tomorrow" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Morgen"
+          }
+        }
+      }
+    },
+    "Total balance" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gesamtsaldo"
+          }
+        }
+      }
+    },
+    "Total working time" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Arbeitszeit gesamt"
+          }
+        }
+      }
+    },
+    "Tracked days" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erfasste Tage"
+          }
+        }
+      }
+    },
+    "Tracked days appear here, or import hours from CSV or Excel." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erfasste Tage erscheinen hier, oder importiere Stunden aus CSV oder Excel."
+          }
+        }
+      }
+    },
+    "Tracked days appear here." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erfasste Tage erscheinen hier."
+          }
+        }
+      }
+    },
+    "Tracked months appear here." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erfasste Monate erscheinen hier."
+          }
+        }
+      }
+    },
+    "Tracked since" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erfasst seit"
+          }
+        }
+      }
+    },
+    "Type" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Art"
+          }
+        }
+      }
+    },
+    "Untitled" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ohne Namen"
+          }
+        }
+      }
+    },
+    "Untracked workdays don’t count as minus hours" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Arbeitstage ohne Erfassung zählen nicht als Minus"
+          }
+        }
+      }
+    },
+    "Up to date" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aktuell"
+          }
+        }
+      }
+    },
+    "Updates" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Updates"
+          }
+        }
+      }
+    },
+    "Use carry-over" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saldo-Übertrag verwenden"
+          }
+        }
+      }
+    },
+    "Use my location" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Meinen Standort verwenden"
+          }
+        }
+      }
+    },
+    "Vacation" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Urlaub"
+          }
+        }
+      }
+    },
+    "Version %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Version %@"
+          }
+        }
+      }
+    },
+    "Version %@ available" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Version %@ verfügbar"
+          }
+        }
+      }
+    },
+    "Week" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Woche"
+          }
+        }
+      }
+    },
+    "Week %lld: %@ to %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "KW %lld: %@ bis %@"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Week %1$lld: %2$@ to %3$@"
+          }
+        }
+      }
+    },
+    "Weekday" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wochentag"
+          }
+        }
+      }
+    },
+    "Weekly target %@ h" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wochensoll %@ h"
+          }
+        }
+      }
+    },
+    "Welcome to Clockout" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Willkommen bei Clockout"
+          }
+        }
+      }
+    },
+    "Whit Monday" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pfingstmontag"
+          }
+        }
+      }
+    },
+    "Whit Sunday" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pfingstsonntag"
+          }
+        }
+      }
+    },
+    "Will be added" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wird ergänzt"
+          }
+        }
+      }
+    },
+    "with %lld work blocks" : {
+      "localizations" : {
+        "de" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "mit %lld Arbeitsblock"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "mit %lld Arbeitsblöcken"
+                }
+              }
+            }
+          }
+        },
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "with %lld work block"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "with %lld work blocks"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Work" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Arbeit"
+          }
+        }
+      }
+    },
+    "Work %@ to %@, %@ h" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Arbeit %@ bis %@, %@ h"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Work %1$@ to %2$@, %3$@ h"
+          }
+        }
+      }
+    },
+    "Work blocks" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Arbeitsblöcke"
+          }
+        }
+      }
+    },
+    "Work blocks not readable" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Arbeitsblöcke nicht lesbar"
+          }
+        }
+      }
+    },
+    "Work blocks of all jobs" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Arbeitsblöcke aller Jobs"
+          }
+        }
+      }
+    },
+    "Work blocks today" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Arbeitsblöcke heute"
+          }
+        }
+      }
+    },
+    "Workdays" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Arbeitstage"
+          }
+        }
+      }
+    },
+    "Workdays only" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nur Arbeitstage"
+          }
+        }
+      }
+    },
+    "Worked Today" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Heute gearbeitet"
+          }
+        }
+      }
+    },
+    "Worked today, last until %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Heute gearbeitet, zuletzt bis %@"
+          }
+        }
+      }
+    },
+    "Working hours %@ %@ to %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Arbeitszeiten %@ %@ bis %@"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Working hours %1$@ %2$@ to %3$@"
+          }
+        }
+      }
+    },
+    "Working time" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Arbeitszeit"
+          }
+        }
+      }
+    },
+    "Working time (decimal)" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Arbeitszeit (dezimal)"
+          }
+        }
+      }
+    },
+    "Working Time Law" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Arbeitszeitgesetz"
+          }
+        }
+      }
+    },
+    "World Children's Day" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Weltkindertag"
+          }
+        }
+      }
+    },
+    "Year" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jahr"
+          }
+        }
+      }
+    },
+    "Yellow" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gelb"
+          }
+        }
+      }
+    },
+    "Yesterday" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gestern"
+          }
+        }
+      }
+    },
+    "You have been working for %@ hours straight. After 6 hours of work, a 30-minute break is required." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du arbeitest seit %@ Stunden am Stück. Ab 6 Stunden Arbeit sind 30 Minuten Pause vorgeschrieben."
+          }
+        }
+      }
+    },
+    "You were away for %lld minutes" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du warst %lld Minuten weg"
+          }
+        }
+      }
+    },
+    "You worked %@ hours for %@ today." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du hast heute %@ Stunden für %@ gearbeitet."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You worked %1$@ hours for %2$@ today."
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

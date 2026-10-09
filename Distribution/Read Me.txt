@@ -1,9 +1,9 @@
-Installing Working Hours
+Installing Clockout
 
-1. Drag "Working Hours" onto "Applications".
+1. Drag "Clockout" onto "Applications".
 2. Open the app from Applications with right-click > Open.
    If macOS blocks it: System Settings > Privacy & Security,
-   scroll down and click "Open Anyway" next to "Working Hours".
+   scroll down and click "Open Anyway" next to "Clockout".
    This is only needed the first time, because the app does not come from the App Store.
 
 Requires macOS 15 or later (Apple silicon and Intel).
@@ -11,12 +11,12 @@ Requires macOS 15 or later (Apple silicon and Intel).
 The app starts empty. All data stays on your Mac.
 
 
-Working Hours installieren
+Clockout installieren
 
-1. "Working Hours" auf "Applications" ziehen (das ist der Ordner Programme).
+1. "Clockout" auf "Applications" ziehen (das ist der Ordner Programme).
 2. Die App in Programme mit Rechtsklick > Öffnen starten.
    Falls macOS das Öffnen blockiert: Systemeinstellungen > Datenschutz & Sicherheit,
-   ganz unten bei "Working Hours" auf "Trotzdem öffnen" klicken.
+   ganz unten bei "Clockout" auf "Trotzdem öffnen" klicken.
    Das ist nur beim ersten Start nötig, weil die App nicht über den App Store kommt.
 
 Voraussetzung: macOS 15 oder neuer (Apple Silicon und Intel).

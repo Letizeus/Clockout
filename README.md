@@ -1,8 +1,8 @@
-# Working Hours
+# Clockout
 
 A native macOS app for tracking working hours, made for timesheets that only ask for *from*, *to* and *break*.
 
-Start the timer, pause as often as you like, and finish the day. Working Hours shows the actual work blocks and condenses them into the one line your timesheet needs: the start is the first start, the break is the sum of all gaps, and the end follows from start, working time and break, so the worked time always matches.
+Start the timer, pause as often as you like, and finish the day. Clockout shows the actual work blocks and condenses them into the one line your timesheet needs: the start is the first start, the break is the sum of all gaps, and the end follows from start, working time and break, so the worked time always matches.
 
 The app is available in English and German.
 
@@ -23,7 +23,7 @@ The app is available in English and German.
 
 ## Install
 
-Download the latest `.dmg` from [Releases](../../releases), open it and drag Working Hours into Applications.
+Download the latest `.dmg` from [Releases](../../releases), open it and drag Clockout into Applications.
 
 The app is not notarized by Apple, so macOS asks the first time you open it. Right-click the app and choose *Open*, or go to *System Settings > Privacy & Security* and click *Open Anyway*.
 
@@ -31,8 +31,8 @@ Requires macOS 15 or later on Apple silicon or Intel.
 
 ## Build from source
 
-1. Open `Working Hours.xcodeproj` in Xcode 27 or later.
-2. Run the *Working Hours* scheme.
+1. Open `Clockout.xcodeproj` in Xcode 27 or later.
+2. Run the *Clockout* scheme.
 
 Builds are signed to run locally, which needs no Apple Developer account. To sign with your own team, create `Config/Local.xcconfig` (ignored by git):
 
@@ -44,7 +44,7 @@ CODE_SIGN_IDENTITY = Apple Development
 Run the tests with *Product > Test* or:
 
 ```
-xcodebuild test -project "Working Hours.xcodeproj" -scheme "Working Hours" -destination 'platform=macOS'
+xcodebuild test -project "Clockout.xcodeproj" -scheme "Clockout" -destination 'platform=macOS'
 ```
 
 Launch with `-demo` in a Debug build to get two weeks of sample data in memory, without touching your own entries.
@@ -60,13 +60,13 @@ Launch with `-demo` in a Debug build to get two weeks of sample data in memory, 
 ## Project layout
 
 ```
-Working Hours/          App sources (SwiftUI, SwiftData)
+Clockout/               App sources (SwiftUI, SwiftData)
   App/                  App entry, menu bar mode, Shortcuts actions
   Models/               Sessions, jobs, statistics, holidays, ArbZG checks
   Services/             Timer, import and export, backup, reminders
   Views/                Today, History, Statistics, Settings and shared components
   Localizable.xcstrings English and German texts
-Working HoursTests/     Swift Testing tests
+ClockoutTests/          Swift Testing tests
 Distribution/           DMG build script, entitlements and read-me
 Config/                 Signing configuration
 ```

@@ -1,0 +1,52 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "CFBundleDisplayName" : {
+      "comment" : "Bundle display name",
+      "shouldTranslate" : false
+    },
+    "CFBundleName" : {
+      "comment" : "Bundle name",
+      "shouldTranslate" : false
+    },
+    "NSHumanReadableCopyright" : {
+      "comment" : "Copyright (human-readable)",
+      "shouldTranslate" : false
+    },
+    "NSLocationUsageDescription" : {
+      "comment" : "Privacy - Location Usage Description",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clockout nutzt deinen Standort einmalig, um die gesetzlichen Feiertage deines Bundeslands oder Landes zu wählen. Der Standort wird nicht gespeichert."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clockout uses your location once to choose the public holidays of your country or state. The location is not stored."
+          }
+        }
+      }
+    },
+    "NSLocationWhenInUseUsageDescription" : {
+      "comment" : "Privacy - Location When In Use Usage Description",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clockout nutzt deinen Standort einmalig, um die gesetzlichen Feiertage deines Bundeslands oder Landes zu wählen. Der Standort wird nicht gespeichert."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clockout uses your location once to choose the public holidays of your country or state. The location is not stored."
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

@@ -1,13 +1,13 @@
 #!/bin/zsh
-# Builds "dist/Working Hours <version>.dmg" to share with others: universal, signed locally
+# Builds "dist/Clockout <version>.dmg" to share with others: universal, signed locally
 # (no Apple Developer account needed), with only the sandbox entitlements and no personal data.
 set -euo pipefail
 
 ROOT="${0:A:h:h}"
 cd "$ROOT"
 
-BUILD="${TMPDIR:-/tmp}/working-hours-dist"
-APP="$BUILD/Build/Products/Release/Working Hours.app"
+BUILD="${TMPDIR:-/tmp}/clockout-dist"
+APP="$BUILD/Build/Products/Release/Clockout.app"
 STAGE="$BUILD/stage"
 
 fail() {
@@ -16,7 +16,7 @@ fail() {
 }
 
 rm -rf "${BUILD:?}"
-xcodebuild -project "Working Hours.xcodeproj" -scheme "Working Hours" -configuration Release \
+xcodebuild -project "Clockout.xcodeproj" -scheme "Clockout" -configuration Release \
     -destination 'generic/platform=macOS' -derivedDataPath "$BUILD" \
     CODE_SIGN_IDENTITY="-" CODE_SIGN_STYLE=Manual DEVELOPMENT_TEAM="" \
     build -quiet
@@ -31,7 +31,7 @@ entitlements=$(codesign -d --entitlements - "$APP" 2>/dev/null)
 [[ $entitlements != *get-task-allow* ]] || fail "get-task-allow still present"
 [[ $(codesign -dvv "$APP" 2>&1) == *"flags=0x10002(adhoc,runtime)"* ]] || fail "hardened runtime missing"
 
-archs=$(lipo -archs "$APP/Contents/MacOS/Working Hours")
+archs=$(lipo -archs "$APP/Contents/MacOS/Clockout")
 [[ $archs == *arm64* && $archs == *x86_64* ]] || fail "not universal: $archs"
 
 # Nothing that identifies the person who built it. The patterns come from this Mac, not from this file.
@@ -47,15 +47,15 @@ for pattern in $patterns; do
 done
 
 version=$(/usr/libexec/PlistBuddy -c "Print :CFBundleShortVersionString" "$APP/Contents/Info.plist")
-dmg="dist/Working Hours $version.dmg"
+dmg="dist/Clockout $version.dmg"
 
 mkdir -p "$STAGE" dist
-ditto "$APP" "$STAGE/Working Hours.app"
+ditto "$APP" "$STAGE/Clockout.app"
 ln -s /Applications "$STAGE/Applications"
 cp "Distribution/Read Me.txt" "$STAGE/"
 
 rm -f "$dmg"
-hdiutil create -volname "Working Hours" -srcfolder "$STAGE" -format UDZO "$dmg" >/dev/null 2>&1 || fail "hdiutil create failed"
+hdiutil create -volname "Clockout" -srcfolder "$STAGE" -format UDZO "$dmg" >/dev/null 2>&1 || fail "hdiutil create failed"
 hdiutil verify "$dmg" >/dev/null 2>&1 || fail "disk image does not verify"
 
 print "$dmg ($archs, macOS $(/usr/libexec/PlistBuddy -c "Print :LSMinimumSystemVersion" "$APP/Contents/Info.plist")+)"
