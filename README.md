@@ -4,6 +4,7 @@
 </picture>
 
 <br/>
+<br/>
 
 A native macOS app for tracking working hours, made for timesheets that only ask for *from*, *to* and *break*.
 
