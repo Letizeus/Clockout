@@ -11,8 +11,8 @@ struct HolidaySettingsView: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
-            SettingsSection(footer: "There is no target on holidays, but entered hours still count. Mark your own days off in History via Absence.") {
-                SettingsToggle(title: "Use public holidays", isOn: $job.holidaysEnabled)
+            SettingsSection(footer: "Holidays have no target; hours tracked on them still count.") {
+                SettingsToggle(title: "Public holidays", isOn: $job.holidaysEnabled)
                 if job.holidaysEnabled {
                     SettingsRow(title: "Country", subtitle: detectionNote.map { LocalizedStringResource("\($0)") }) {
                         HStack(spacing: 8) {
@@ -22,15 +22,14 @@ struct HolidaySettingsView: View {
                                 if isDetecting {
                                     ProgressView().controlSize(.small)
                                 } else {
-                                    Label("Location", systemImage: "location")
+                                    Label("Use Location", systemImage: "location")
                                 }
                             }
                             .buttonStyle(.secondary(height: 26))
                             .disabled(isDetecting)
-                            .help("Detect country and state from your location")
 
                             Picker("Country", selection: countryBinding) {
-                                Text("Not chosen").tag(HolidayCountry?.none)
+                                Text("None").tag(HolidayCountry?.none)
                                 ForEach(HolidayCountry.allCases) { country in
                                     Text(country.title).tag(HolidayCountry?.some(country))
                                 }
@@ -87,9 +86,9 @@ struct HolidaySettingsView: View {
             isDetecting = false
             if let region = result.region {
                 job.holidayRegion = region
-                detectionNote = result.fromLocation ? String(localized: "Detected from your location") : String(localized: "From System Settings, location not available")
+                detectionNote = result.fromLocation ? String(localized: "From your location") : String(localized: "From System Settings")
             } else {
-                detectionNote = String(localized: "Not detected, please choose manually")
+                detectionNote = String(localized: "Not detected. Choose a country.")
             }
         }
     }

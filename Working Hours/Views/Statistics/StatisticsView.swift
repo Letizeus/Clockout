@@ -136,7 +136,7 @@ struct StatisticsView: View {
                 .fixedSize(horizontal: false, vertical: true)
 
                 VStack(alignment: .leading, spacing: 8) {
-                    SectionHeader("History")
+                    SectionHeader("Hours Worked")
                     chart(points: chartPoints(days: days), interval: interval)
                         .card()
                 }
@@ -150,7 +150,6 @@ struct StatisticsView: View {
                                 Label("Copy Table", systemImage: "square.on.square")
                             }
                             .buttonStyle(.secondary(height: 26))
-                            .help("Copy start, end and break of all days as a table")
                         }
                     }
                     if period == .year {
@@ -300,7 +299,7 @@ struct StatisticsView: View {
         return VStack(spacing: 0) {
             TableHeaderRow(columns: [String(localized: "Day"), String(localized: "Start time"), String(localized: "End time"), String(localized: "Break"), String(localized: "Working time"), String(localized: "Balance")])
             if rows.isEmpty {
-                EmptyState(systemImage: "calendar", title: "No entries", message: "Nothing was tracked in this period.")
+                EmptyState(systemImage: "calendar", title: "Nothing tracked", message: "Tracked days appear here.")
             }
             ForEach(rows) { day in
                 let entry = TimesheetEntry(report: day.report, roundingMinutes: job.roundingMinutes)
@@ -334,7 +333,7 @@ struct StatisticsView: View {
         return VStack(spacing: 0) {
             TableHeaderRow(columns: [String(localized: "Month"), String(localized: "Days"), String(localized: "Working time"), String(localized: "Target"), String(localized: "Balance")])
             if months.isEmpty {
-                EmptyState(systemImage: "calendar", title: "No entries", message: "Nothing was tracked in this year.")
+                EmptyState(systemImage: "calendar", title: "Nothing tracked", message: "Tracked months appear here.")
             }
             ForEach(months, id: \.month) { month in
                 TableDataRow(
@@ -386,7 +385,7 @@ struct StatisticsView: View {
         case (true, false): return String(localized: "excluding \(holidays)")
         case (false, true): return String(localized: "excluding \(absences)")
         case (false, false):
-            return job.targetOnlyOnTrackedDays ? String(localized: "only days with entries") : String(localized: "all workdays")
+            return job.targetOnlyOnTrackedDays ? String(localized: "only tracked days") : String(localized: "all workdays")
         }
     }
 

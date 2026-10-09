@@ -76,7 +76,7 @@ enum ImportConflictStrategy: String, CaseIterable, Identifiable {
     var title: String {
         switch self {
         case .skipExistingDays: String(localized: "Skip")
-        case .replaceExistingDays: String(localized: "Replace existing entries")
+        case .replaceExistingDays: String(localized: "Replace existing work blocks")
         case .add: String(localized: "Add as well")
         }
     }
@@ -117,10 +117,10 @@ struct ImportResult: Equatable {
         let blocks = String(localized: "with \(createdBlocks) work blocks")
         var text = String(localized: "Imported \(days) \(blocks).")
         if replacedDays > 0 {
-            text += " " + String(localized: "Existing entries were replaced on \(replacedDays) days.")
+            text += " " + String(localized: "Existing work blocks were replaced on \(replacedDays) days.")
         }
         if skippedDays > 0 {
-            text += " " + String(localized: "\(skippedDays) days were skipped because they already had entries.")
+            text += " " + String(localized: "\(skippedDays) days were skipped because they were already tracked.")
         }
         return text
     }

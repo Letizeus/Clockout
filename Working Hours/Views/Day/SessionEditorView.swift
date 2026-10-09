@@ -64,10 +64,10 @@ struct SessionEditorView: View {
 
     private var validationMessage: String? {
         if isRunning {
-            return start > .now ? String(localized: "The start must not be in the future.") : nil
+            return start > .now ? String(localized: "Start can’t be in the future") : nil
         }
-        if end <= start { return String(localized: "The end must be after the start.") }
-        if duration > 24 * 3600 { return String(localized: "A block can be 24 hours at most.") }
+        if end <= start { return String(localized: "End must be after start") }
+        if duration > 24 * 3600 { return String(localized: "A work block can’t exceed 24 hours") }
         return nil
     }
 
@@ -141,15 +141,15 @@ struct SessionEditorView: View {
             .padding(16)
         }
         .frame(width: 460)
-        .confirmationDialog("Delete entry?", isPresented: $confirmsDeletion) {
-            Button("Delete", role: .destructive) {
+        .confirmationDialog("Delete Work Block?", isPresented: $confirmsDeletion) {
+            Button("Delete Work Block", role: .destructive) {
                 if case .edit(let session) = target {
                     tracker.delete(session)
                 }
                 dismiss()
             }
         } message: {
-            Text("This work block will be removed permanently.")
+            Text("This can’t be undone.")
         }
     }
 

@@ -59,12 +59,22 @@
         }
       }
     },
-    "%@ is a public holiday: no target, tracked time still counts as plus.": {
+    "%@ is dark only": {
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "%@ ist ein gesetzlicher Feiertag: kein Soll, erfasste Zeit zählt trotzdem als Plus."
+            "value": "%@ gibt es nur dunkel"
+          }
+        }
+      }
+    },
+    "%@ is light only": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ gibt es nur hell"
           }
         }
       }
@@ -85,32 +95,28 @@
         }
       }
     },
-    "%@ is only available in dark.": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "%@ gibt es nur dunkel."
-          }
-        }
-      }
-    },
-    "%@ is only available in light.": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "%@ gibt es nur hell."
-          }
-        }
-      }
-    },
     "%@ is running": {
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
             "value": "%@ läuft gerade"
+          }
+        }
+      }
+    },
+    "%@ is running (%@). Starting here ends that work block.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ läuft (%@). Starten hier beendet diesen Arbeitsblock."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ is running (%2$@). Starting here ends that work block."
           }
         }
       }
@@ -234,12 +240,28 @@
         }
       }
     },
-    "%@: no target on this day. Tracked time still counts as plus.": {
+    "%@: no target for %@ today": {
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "%@: An diesem Tag zählt kein Soll. Erfasste Zeit zählt trotzdem als Plus."
+            "value": "%@: heute kein Soll für %@"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@: no target for %2$@ today"
+          }
+        }
+      }
+    },
+    "%@: no target; tracked time still counts.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@: kein Soll; erfasste Zeit zählt trotzdem."
           }
         }
       }
@@ -487,7 +509,7 @@
         }
       }
     },
-    "%lld days were skipped because they already had entries.": {
+    "%lld days were skipped because they were already tracked.": {
       "localizations": {
         "de": {
           "variations": {
@@ -495,13 +517,13 @@
               "one": {
                 "stringUnit": {
                   "state": "translated",
-                  "value": "%lld Tag wurde übersprungen, weil schon Einträge vorhanden waren."
+                  "value": "%lld Tag wurde übersprungen, weil er schon erfasst war."
                 }
               },
               "other": {
                 "stringUnit": {
                   "state": "translated",
-                  "value": "%lld Tage wurden übersprungen, weil schon Einträge vorhanden waren."
+                  "value": "%lld Tage wurden übersprungen, weil sie schon erfasst waren."
                 }
               }
             }
@@ -513,13 +535,13 @@
               "one": {
                 "stringUnit": {
                   "state": "translated",
-                  "value": "%lld day was skipped because it already had entries."
+                  "value": "%lld day was skipped because it was already tracked."
                 }
               },
               "other": {
                 "stringUnit": {
                   "state": "translated",
-                  "value": "%lld days were skipped because they already had entries."
+                  "value": "%lld days were skipped because they were already tracked."
                 }
               }
             }
@@ -527,7 +549,7 @@
         }
       }
     },
-    "%lld days without target. Entries on these days still count as working time. Change single days in History.": {
+    "%lld days without target; work on them still counts.": {
       "localizations": {
         "de": {
           "variations": {
@@ -535,13 +557,13 @@
               "one": {
                 "stringUnit": {
                   "state": "translated",
-                  "value": "%lld Tag ohne Soll. Einträge an diesen Tagen zählen trotzdem als Arbeitszeit. Einzelne Tage änderst du im Verlauf."
+                  "value": "%lld Tag ohne Soll; Arbeit daran zählt trotzdem."
                 }
               },
               "other": {
                 "stringUnit": {
                   "state": "translated",
-                  "value": "%lld Tage ohne Soll. Einträge an diesen Tagen zählen trotzdem als Arbeitszeit. Einzelne Tage änderst du im Verlauf."
+                  "value": "%lld Tage ohne Soll; Arbeit daran zählt trotzdem."
                 }
               }
             }
@@ -553,13 +575,13 @@
               "one": {
                 "stringUnit": {
                   "state": "translated",
-                  "value": "%lld day without target. Entries on these days still count as working time. Change single days in History."
+                  "value": "%lld day without target; work on it still counts."
                 }
               },
               "other": {
                 "stringUnit": {
                   "state": "translated",
-                  "value": "%lld days without target. Entries on these days still count as working time. Change single days in History."
+                  "value": "%lld days without target; work on them still counts."
                 }
               }
             }
@@ -770,86 +792,6 @@
         }
       }
     },
-    "%lld work blocks combined: the start is your first start, the break contains all interruptions, and the end follows from start, working time and break.": {
-      "localizations": {
-        "de": {
-          "variations": {
-            "plural": {
-              "one": {
-                "stringUnit": {
-                  "state": "translated",
-                  "value": "%lld Arbeitsblock zusammengefasst: Beginn ist dein erster Start, die Pause enthält alle Unterbrechungen, das Ende ergibt sich aus Beginn, Arbeitszeit und Pause."
-                }
-              },
-              "other": {
-                "stringUnit": {
-                  "state": "translated",
-                  "value": "%lld Arbeitsblöcke zusammengefasst: Beginn ist dein erster Start, die Pause enthält alle Unterbrechungen, das Ende ergibt sich aus Beginn, Arbeitszeit und Pause."
-                }
-              }
-            }
-          }
-        },
-        "en": {
-          "variations": {
-            "plural": {
-              "one": {
-                "stringUnit": {
-                  "state": "translated",
-                  "value": "%lld work block combined: the start is your first start, the break contains all interruptions, and the end follows from start, working time and break."
-                }
-              },
-              "other": {
-                "stringUnit": {
-                  "state": "translated",
-                  "value": "%lld work blocks combined: the start is your first start, the break contains all interruptions, and the end follows from start, working time and break."
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "%lld work blocks of all jobs will be removed permanently. The jobs and their rules are kept. This cannot be undone.": {
-      "localizations": {
-        "de": {
-          "variations": {
-            "plural": {
-              "one": {
-                "stringUnit": {
-                  "state": "translated",
-                  "value": "%lld Arbeitsblock aller Jobs wird dauerhaft entfernt. Die Jobs und ihre Regeln bleiben erhalten. Das kann nicht rückgängig gemacht werden."
-                }
-              },
-              "other": {
-                "stringUnit": {
-                  "state": "translated",
-                  "value": "Alle %lld Arbeitsblöcke aller Jobs werden dauerhaft entfernt. Die Jobs und ihre Regeln bleiben erhalten. Das kann nicht rückgängig gemacht werden."
-                }
-              }
-            }
-          }
-        },
-        "en": {
-          "variations": {
-            "plural": {
-              "one": {
-                "stringUnit": {
-                  "state": "translated",
-                  "value": "%lld work block of all jobs will be removed permanently. The jobs and their rules are kept. This cannot be undone."
-                }
-              },
-              "other": {
-                "stringUnit": {
-                  "state": "translated",
-                  "value": "%lld work blocks of all jobs will be removed permanently. The jobs and their rules are kept. This cannot be undone."
-                }
-              }
-            }
-          }
-        }
-      }
-    },
     "%lld%%": {
       "shouldTranslate": false
     },
@@ -906,22 +848,12 @@
         }
       }
     },
-    "A block can be 24 hours at most.": {
+    "A work block can’t exceed 24 hours": {
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Ein Block darf höchstens 24 Stunden umfassen."
-          }
-        }
-      }
-    },
-    "A few details about your job, so target and balance are right. You can change everything later under Settings > Jobs.": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Ein paar Angaben zu deinem Job, damit Soll und Saldo stimmen. Alles lässt sich später unter Einstellungen > Jobs ändern."
+            "value": "Ein Arbeitsblock darf höchstens 24 Stunden dauern"
           }
         }
       }
@@ -966,7 +898,7 @@
         }
       }
     },
-    "Add": {
+    "Add Absence": {
       "localizations": {
         "de": {
           "stringUnit": {
@@ -996,22 +928,22 @@
         }
       }
     },
-    "Add a work block manually": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Arbeitsblock manuell hinzufügen"
-          }
-        }
-      }
-    },
     "Add as well": {
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
             "value": "Zusätzlich hinzufügen"
+          }
+        }
+      }
+    },
+    "Add vacation or sick days": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Urlaub oder Krankheit eintragen"
           }
         }
       }
@@ -1076,22 +1008,42 @@
         }
       }
     },
-    "As soon as working time is tracked, you see start, end and break here, ready to copy.": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Sobald Arbeitszeit erfasst ist, siehst du hier Beginn, Ende und Pause zum Übertragen."
-          }
-        }
-      }
-    },
     "Ascension Day": {
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
             "value": "Christi Himmelfahrt"
+          }
+        }
+      }
+    },
+    "Ask about idle time": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bei Leerlauf fragen"
+          }
+        }
+      }
+    },
+    "Asks GitHub once a day; nothing about you or your hours is sent.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fragt einmal täglich bei GitHub nach; nichts über dich oder deine Stunden wird gesendet."
+          }
+        }
+      }
+    },
+    "Asks whether idle time while the timer ran was a break.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fragt, ob Leerlauf bei laufendem Timer eine Pause war."
           }
         }
       }
@@ -1156,32 +1108,6 @@
         }
       }
     },
-    "Backup from %@ restored.": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Backup vom %@ wiederhergestellt."
-          }
-        }
-      }
-    },
-    "Backup from %@: %@, %@. This replaces all current jobs and entries.": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Backup vom %@: %@, %@. Alle aktuellen Jobs und Einträge werden dadurch ersetzt."
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Backup from %1$@: %2$@, %3$@. This replaces all current jobs and entries."
-          }
-        }
-      }
-    },
     "Baden-Württemberg": {
       "localizations": {
         "de": {
@@ -1208,16 +1134,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "Bayern"
-          }
-        }
-      }
-    },
-    "Before your first day of work on %@, there is no target.": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Vor deinem Arbeitsbeginn am %@ zählt kein Soll."
           }
         }
       }
@@ -1430,6 +1346,26 @@
         }
       }
     },
+    "Can’t read the file. Check that it’s a CSV or Excel file.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Datei nicht lesbar. Prüfe, ob es eine CSV- oder Excel-Datei ist."
+          }
+        }
+      }
+    },
+    "Can’t read this picture. Try PNG or JPEG.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bild nicht lesbar. Versuche PNG oder JPEG."
+          }
+        }
+      }
+    },
     "Carry-over": {
       "localizations": {
         "de": {
@@ -1460,12 +1396,12 @@
         }
       }
     },
-    "Check for updates automatically": {
+    "Check for updates": {
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Automatisch nach Updates suchen"
+            "value": "Nach Updates suchen"
           }
         }
       }
@@ -1530,12 +1466,12 @@
         }
       }
     },
-    "Choose on the left which column holds the date, start and end.": {
+    "Choose the columns for date, start and end on the left.": {
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Wähle links, in welcher Spalte Datum, Beginn und Ende stehen."
+            "value": "Wähle links die Spalten für Datum, Beginn und Ende."
           }
         }
       }
@@ -1580,12 +1516,42 @@
         }
       }
     },
-    "Contains all jobs with their rules, pictures, absences, carry-over and entries. Use it to move to a new Mac, too. Restoring replaces the current data.": {
+    "Combines %lld work blocks: first start, gaps as break.": {
       "localizations": {
         "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Enthält alle Jobs mit Regeln, Bildern, Abwesenheiten, Übertrag und Einträgen. Damit ziehst du auch auf einen neuen Mac um. Wiederherstellen ersetzt die aktuellen Daten."
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Fasst %lld Arbeitsblock zusammen: erster Start, Lücken als Pause."
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Fasst %lld Arbeitsblöcke zusammen: erster Start, Lücken als Pause."
+                }
+              }
+            }
+          }
+        },
+        "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Combines %lld work block: first start, gaps as break."
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Combines %lld work blocks: first start, gaps as break."
+                }
+              }
+            }
           }
         }
       }
@@ -1640,12 +1606,12 @@
         }
       }
     },
-    "Copy as Table Row (Tab-Separated)": {
+    "Copy as Table Row": {
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Als Tabellenzeile kopieren (Tab-getrennt)"
+            "value": "Als Tabellenzeile kopieren"
           }
         }
       }
@@ -1680,16 +1646,6 @@
         }
       }
     },
-    "Copy start, end and break of all days as a table": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Beginn, Ende und Pause aller Tage als Tabelle kopieren"
-          }
-        }
-      }
-    },
     "Corpus Christi": {
       "localizations": {
         "de": {
@@ -1700,12 +1656,32 @@
         }
       }
     },
-    "Could not check for updates.": {
+    "Couldn’t change the login item: %@": {
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Die Suche nach Updates ist fehlgeschlagen."
+            "value": "Anmeldeobjekt nicht geändert: %@"
+          }
+        }
+      }
+    },
+    "Couldn’t reach GitHub. Try again later.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "GitHub nicht erreichbar. Versuche es später erneut."
+          }
+        }
+      }
+    },
+    "Couldn’t restore the backup: %@": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Backup nicht wiederhergestellt: %@"
           }
         }
       }
@@ -1730,22 +1706,12 @@
         }
       }
     },
-    "Create a backup first or export your times as CSV in History if you want to keep them.": {
+    "Create…": {
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Erstelle vorher ein Backup oder exportiere deine Zeiten im Verlauf als CSV, falls du sie behalten möchtest."
-          }
-        }
-      }
-    },
-    "Create backup": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Backup erstellen"
+            "value": "Erstellen…"
           }
         }
       }
@@ -1870,22 +1836,22 @@
         }
       }
     },
+    "Days already tracked": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bereits erfasste Tage"
+          }
+        }
+      }
+    },
     "Days for the timesheet": {
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
             "value": "Tage für die Stundenliste"
-          }
-        }
-      }
-    },
-    "Days with existing entries": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Tage mit vorhandenen Einträgen"
           }
         }
       }
@@ -1910,32 +1876,22 @@
         }
       }
     },
-    "Delete": {
+    "Delete All Work Blocks?": {
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Löschen"
+            "value": "Alle Arbeitsblöcke löschen?"
           }
         }
       }
     },
-    "Delete All": {
+    "Delete All…": {
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Alle löschen"
-          }
-        }
-      }
-    },
-    "Delete All Data…": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Alle Daten löschen…"
+            "value": "Alle löschen…"
           }
         }
       }
@@ -1950,42 +1906,32 @@
         }
       }
     },
-    "Delete Job and Entries": {
+    "Delete Work Block": {
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Job und Einträge löschen"
+            "value": "Arbeitsblock löschen"
           }
         }
       }
     },
-    "Delete all entries of all jobs": {
+    "Delete Work Block?": {
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Alle Einträge aller Jobs löschen"
+            "value": "Arbeitsblock löschen?"
           }
         }
       }
     },
-    "Delete all entries?": {
+    "Delete Work Blocks": {
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Alle Einträge löschen?"
-          }
-        }
-      }
-    },
-    "Delete entry?": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Eintrag löschen?"
+            "value": "Arbeitsblöcke löschen"
           }
         }
       }
@@ -2000,6 +1946,86 @@
         }
       }
     },
+    "Deletes all %lld work blocks for good; jobs and their rules stay.": {
+      "localizations": {
+        "de": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Löscht den %lld Arbeitsblock endgültig; Jobs und ihre Regeln bleiben."
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Löscht alle %lld Arbeitsblöcke endgültig; Jobs und ihre Regeln bleiben."
+                }
+              }
+            }
+          }
+        },
+        "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Deletes the %lld work block for good; jobs and their rules stay."
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Deletes all %lld work blocks for good; jobs and their rules stay."
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Deletes the job and its %lld work blocks. This can’t be undone.": {
+      "localizations": {
+        "de": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Löscht den Job und seinen %lld Arbeitsblock. Das lässt sich nicht rückgängig machen."
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Löscht den Job und seine %lld Arbeitsblöcke. Das lässt sich nicht rückgängig machen."
+                }
+              }
+            }
+          }
+        },
+        "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Deletes the job and its %lld work block. This can’t be undone."
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Deletes the job and its %lld work blocks. This can’t be undone."
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "Delete…": {
       "localizations": {
         "de": {
@@ -2010,42 +2036,12 @@
         }
       }
     },
-    "Detect country and state from your location": {
+    "Detected from your location; change it in Settings > Jobs > Holidays.": {
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Land und Bundesland über deinen Standort erkennen"
-          }
-        }
-      }
-    },
-    "Detect time away": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Abwesenheit erkennen"
-          }
-        }
-      }
-    },
-    "Detected from your location": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Über deinen Standort erkannt"
-          }
-        }
-      }
-    },
-    "Detected from your location or the region in System Settings. Country, state and single holidays are set under Settings > Jobs > Holidays.": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Erkannt über deinen Standort oder die Region in den Systemeinstellungen. Land, Bundesland und einzelne Feiertage stellst du unter Einstellungen > Jobs > Feiertage ein."
+            "value": "Über deinen Standort erkannt; ändern unter Einstellungen > Jobs > Feiertage."
           }
         }
       }
@@ -2056,16 +2052,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "Wird erkannt…"
-          }
-        }
-      }
-    },
-    "Did you forget to stop it? Set the actual end.": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Hast du vergessen, ihn zu stoppen? Lege das tatsächliche Ende fest."
           }
         }
       }
@@ -2106,12 +2092,12 @@
         }
       }
     },
-    "Drop a file here or choose one. Supported are .csv and .xlsx, for example your timesheet or an export from this app.": {
+    "Drop a .csv or .xlsx file here, such as your timesheet or an export from this app.": {
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Ziehe eine Datei hierher oder wähle sie aus. Unterstützt werden .csv und .xlsx, zum Beispiel deine Stundenliste oder ein Export aus dieser App."
+            "value": "Ziehe eine .csv- oder .xlsx-Datei hierher, etwa deine Stundenliste oder einen Export dieser App."
           }
         }
       }
@@ -2206,22 +2192,22 @@
         }
       }
     },
+    "End must be after start": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ende muss nach dem Beginn liegen"
+          }
+        }
+      }
+    },
     "End not readable: %@": {
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
             "value": "Ende nicht lesbar: %@"
-          }
-        }
-      }
-    },
-    "End the working day (⇧⌘E)": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Arbeitstag beenden (⇧⌘E)"
           }
         }
       }
@@ -2256,36 +2242,6 @@
         }
       }
     },
-    "Enter target": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Soll angeben"
-          }
-        }
-      }
-    },
-    "Enter vacation, sick days or holidays": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Urlaub, Krankheit oder Feiertage eintragen"
-          }
-        }
-      }
-    },
-    "Entry": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Eintrag"
-          }
-        }
-      }
-    },
     "Epiphany": {
       "localizations": {
         "de": {
@@ -2306,7 +2262,7 @@
         }
       }
     },
-    "Existing entries were replaced on %lld days.": {
+    "Existing work blocks were replaced on %lld days.": {
       "localizations": {
         "de": {
           "variations": {
@@ -2314,13 +2270,13 @@
               "one": {
                 "stringUnit": {
                   "state": "translated",
-                  "value": "Bei %lld Tag wurden die vorhandenen Einträge ersetzt."
+                  "value": "Bei %lld Tag wurden die vorhandenen Arbeitsblöcke ersetzt."
                 }
               },
               "other": {
                 "stringUnit": {
                   "state": "translated",
-                  "value": "Bei %lld Tagen wurden die vorhandenen Einträge ersetzt."
+                  "value": "Bei %lld Tagen wurden die vorhandenen Arbeitsblöcke ersetzt."
                 }
               }
             }
@@ -2332,13 +2288,13 @@
               "one": {
                 "stringUnit": {
                   "state": "translated",
-                  "value": "Existing entries were replaced on %lld day."
+                  "value": "Existing work blocks were replaced on %lld day."
                 }
               },
               "other": {
                 "stringUnit": {
                   "state": "translated",
-                  "value": "Existing entries were replaced on %lld days."
+                  "value": "Existing work blocks were replaced on %lld days."
                 }
               }
             }
@@ -2356,12 +2312,12 @@
         }
       }
     },
-    "Export working times as CSV": {
+    "Export as CSV": {
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Arbeitszeiten als CSV exportieren"
+            "value": "Als CSV exportieren"
           }
         }
       }
@@ -2386,6 +2342,16 @@
         }
       }
     },
+    "Finish day (⇧⌘E)": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Feierabend (⇧⌘E)"
+          }
+        }
+      }
+    },
     "Finish day at %@": {
       "localizations": {
         "de": {
@@ -2402,26 +2368,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "Arbeitsbeginn"
-          }
-        }
-      }
-    },
-    "First entry": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Erster Eintrag"
-          }
-        }
-      }
-    },
-    "For hours you already had before, for example from last year. The total balance is then this carry-over plus all days from the chosen date. Older entries are kept but no longer count.": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Für Stunden, die du schon vorher hattest, zum Beispiel aus dem letzten Jahr. Der Gesamtsaldo ist dann dieser Übertrag plus alle Tage ab dem gewählten Datum. Ältere Einträge bleiben erhalten, zählen aber nicht mehr mit."
           }
         }
       }
@@ -2446,12 +2392,38 @@
         }
       }
     },
-    "From System Settings, location not available": {
+    "From %@ to %@, while the timer ran.": {
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Aus den Systemeinstellungen, Standort nicht verfügbar"
+            "value": "Von %@ bis %@, während der Timer lief."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "From %1$@ to %2$@, while the timer ran."
+          }
+        }
+      }
+    },
+    "From System Settings": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aus den Systemeinstellungen"
+          }
+        }
+      }
+    },
+    "From your location": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Über deinen Standort"
           }
         }
       }
@@ -2476,12 +2448,12 @@
         }
       }
     },
-    "German law requires a break after 6 hours of work at the latest. The reminder refers to the current work block.": {
+    "German law requires a break after 6 hours of work.": {
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Nach spätestens 6 Stunden Arbeit ist eine Pause vorgeschrieben. Die Erinnerung bezieht sich auf den aktuellen Arbeitsblock."
+            "value": "Nach 6 Stunden Arbeit ist eine Pause vorgeschrieben."
           }
         }
       }
@@ -2586,16 +2558,6 @@
         }
       }
     },
-    "Hints": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Hinweise"
-          }
-        }
-      }
-    },
     "History": {
       "localizations": {
         "de": {
@@ -2642,6 +2604,16 @@
         }
       }
     },
+    "Holidays have no target; hours tracked on them still count.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Feiertage haben kein Soll; erfasste Stunden zählen trotzdem."
+          }
+        }
+      }
+    },
     "Hours": {
       "localizations": {
         "de": {
@@ -2652,12 +2624,42 @@
         }
       }
     },
+    "Hours Worked": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gearbeitete Stunden"
+          }
+        }
+      }
+    },
     "Hours Worked Today": {
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
             "value": "Heutige Arbeitszeit"
+          }
+        }
+      }
+    },
+    "Hours per day": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stunden pro Tag"
+          }
+        }
+      }
+    },
+    "Hours per week": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stunden pro Woche"
           }
         }
       }
@@ -2678,16 +2680,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "Stunden:Minuten (0:30)"
-          }
-        }
-      }
-    },
-    "If the timer runs while nobody uses the Mac or it sleeps, the app asks on your return whether the time was a break. With notifications also when the window is closed.": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Läuft der Timer, während niemand den Mac benutzt oder er schläft, fragt die App beim Zurückkommen, ob die Zeit eine Pause war. Mit Benachrichtigungen auch, wenn das Fenster zu ist."
           }
         }
       }
@@ -2848,12 +2840,22 @@
         }
       }
     },
-    "Include workdays without entries": {
+    "Include untracked workdays": {
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
             "value": "Arbeitstage ohne Erfassung einschließen"
+          }
+        }
+      }
+    },
+    "Includes all jobs, rules and work blocks; restoring replaces everything on this Mac.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enthält alle Jobs, Regeln und Arbeitsblöcke; Wiederherstellen ersetzt alles auf diesem Mac."
           }
         }
       }
@@ -2948,6 +2950,16 @@
         }
       }
     },
+    "Leave empty for the last selected job.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Leer lassen für den zuletzt gewählten Job."
+          }
+        }
+      }
+    },
     "Light": {
       "localizations": {
         "de": {
@@ -2964,16 +2976,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "Lokal auf diesem Mac"
-          }
-        }
-      }
-    },
-    "Location": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Standort"
           }
         }
       }
@@ -3018,12 +3020,12 @@
         }
       }
     },
-    "Mark as vacation, sick day or holiday": {
+    "Mark as day off": {
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Als Urlaub, Krankheit oder Feiertag markieren"
+            "value": "Als freien Tag markieren"
           }
         }
       }
@@ -3078,6 +3080,22 @@
         }
       }
     },
+    "More than %lld h of work needs %lld min of break in parts of at least 15 min (§ 4 ArbZG). Counted: %@ h.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mehr als %lld h Arbeit brauchen %lld min Pause in Abschnitten ab 15 min (§ 4 ArbZG). Angerechnet: %@ h."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "More than %1$lld h of work needs %2$lld min of break in parts of at least 15 min (§ 4 ArbZG). Counted: %3$@ h."
+          }
+        }
+      }
+    },
     "Move Down": {
       "localizations": {
         "de": {
@@ -3118,12 +3136,22 @@
         }
       }
     },
-    "Needed are date, start and end, or the work blocks from an export of this app.": {
+    "Needs approval in System Settings": {
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Nötig sind Datum, Beginn und Ende oder die Arbeitsblöcke aus einem Export dieser App."
+            "value": "Braucht Freigabe in den Systemeinstellungen"
+          }
+        }
+      }
+    },
+    "Needs date, start and end, or the work blocks column of an export.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Braucht Datum, Beginn und Ende oder die Spalte Arbeitsblöcke eines Exports."
           }
         }
       }
@@ -3208,52 +3236,12 @@
         }
       }
     },
-    "No data was found in the file.": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "In der Datei wurden keine Daten gefunden."
-          }
-        }
-      }
-    },
     "No day selected": {
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
             "value": "Kein Tag ausgewählt"
-          }
-        }
-      }
-    },
-    "No entries": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Keine Einträge"
-          }
-        }
-      }
-    },
-    "No entries this month": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Keine Einträge in diesem Monat"
-          }
-        }
-      }
-    },
-    "No entries yet": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Noch keine Einträge"
           }
         }
       }
@@ -3278,6 +3266,16 @@
         }
       }
     },
+    "No target before your first day of work (%@).": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kein Soll vor deinem Arbeitsbeginn (%@)."
+          }
+        }
+      }
+    },
     "No target for this day": {
       "localizations": {
         "de": {
@@ -3298,18 +3296,22 @@
         }
       }
     },
-    "Nobody used the Mac from %@ to %@, and the timer kept running.": {
+    "No work blocks": {
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Von %@ bis %@ hat niemand den Mac benutzt, der Timer lief weiter."
+            "value": "Keine Arbeitsblöcke"
           }
-        },
-        "en": {
+        }
+      }
+    },
+    "None": {
+      "localizations": {
+        "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Nobody used the Mac from %1$@ to %2$@, and the timer kept running."
+            "value": "Keins"
           }
         }
       }
@@ -3324,12 +3326,22 @@
         }
       }
     },
-    "Not chosen": {
+    "Not a valid Excel file. Save it again as .xlsx or .csv.": {
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Nicht gewählt"
+            "value": "Keine gültige Excel-Datei. Speichere sie erneut als .xlsx oder .csv."
+          }
+        }
+      }
+    },
+    "Not a workday for %@": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kein Arbeitstag für %@"
           }
         }
       }
@@ -3344,12 +3356,12 @@
         }
       }
     },
-    "Not detected, please choose manually": {
+    "Not detected. Choose a country.": {
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Nicht erkannt, bitte von Hand wählen"
+            "value": "Nicht erkannt. Wähle ein Land."
           }
         }
       }
@@ -3404,12 +3416,12 @@
         }
       }
     },
-    "Nothing for the timesheet yet": {
+    "Nothing to copy yet": {
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Noch nichts für die Stundenliste"
+            "value": "Noch nichts zum Übertragen"
           }
         }
       }
@@ -3424,42 +3436,42 @@
         }
       }
     },
-    "Nothing was tracked in this period.": {
+    "Nothing tracked": {
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "In diesem Zeitraum wurde nichts erfasst."
+            "value": "Nichts erfasst"
           }
         }
       }
     },
-    "Nothing was tracked in this year.": {
+    "Nothing tracked this month": {
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "In diesem Jahr wurde nichts erfasst."
+            "value": "In diesem Monat nichts erfasst"
           }
         }
       }
     },
-    "Notifications are turned off in System Settings.": {
+    "Nothing tracked yet": {
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Benachrichtigungen sind in den Systemeinstellungen deaktiviert."
+            "value": "Noch nichts erfasst"
           }
         }
       }
     },
-    "Notify when the target is reached": {
+    "Notifications are off. Turn them on in System Settings.": {
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Melden, wenn die Sollzeit erreicht ist"
+            "value": "Mitteilungen sind aus. Schalte sie in den Systemeinstellungen ein."
           }
         }
       }
@@ -3504,46 +3516,6 @@
         }
       }
     },
-    "Once a day the app asks GitHub whether a newer version exists. No data about you or your hours is sent.": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Einmal am Tag fragt die App bei GitHub nach, ob es eine neuere Version gibt. Dabei werden keine Daten über dich oder deine Stunden gesendet."
-          }
-        }
-      }
-    },
-    "One continuous work block without interruption.": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Ein durchgehender Arbeitsblock ohne Unterbrechung."
-          }
-        }
-      }
-    },
-    "One row per day with start, end and break for the timesheet, plus the individual work blocks. The file uses your number format and opens directly in Excel or Numbers.": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Eine Zeile pro Tag mit Beginn, Ende und Pause für die Stundenliste sowie den einzelnen Arbeitsblöcken. Die Datei nutzt Semikolons und deutsche Zahlenformate und lässt sich direkt in Excel oder Numbers öffnen."
-          }
-        }
-      }
-    },
-    "Only workdays without holidays": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Nur Arbeitstage ohne Feiertage"
-          }
-        }
-      }
-    },
     "Open Login Items": {
       "localizations": {
         "de": {
@@ -3570,16 +3542,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "Beim Anmelden automatisch öffnen"
-          }
-        }
-      }
-    },
-    "Open…": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Öffnen…"
           }
         }
       }
@@ -3614,22 +3576,22 @@
         }
       }
     },
-    "Otherwise a workday without entries counts as minus hours. Before the first day of work, on holidays and on absence days from History there is no target.": {
+    "Over the 10-hour daily maximum (§ 3 ArbZG)": {
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Ohne Erfassung zählt ein Arbeitstag sonst als Minusstunden. Vor dem Arbeitsbeginn, an Feiertagen und an Abwesenheitstagen aus dem Verlauf gibt es kein Soll."
+            "value": "Über der Tageshöchstzeit von 10 Stunden (§ 3 ArbZG)"
           }
         }
       }
     },
-    "PNG, JPEG or HEIC, cropped to a square.": {
+    "PNG, JPEG or HEIC, cropped to a square": {
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "PNG, JPEG oder HEIC, wird quadratisch zugeschnitten."
+            "value": "PNG, JPEG oder HEIC, quadratisch zugeschnitten"
           }
         }
       }
@@ -3694,12 +3656,12 @@
         }
       }
     },
-    "Please allow it in System Settings": {
+    "Places the break mid-day; start, end and working time stay exact.": {
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Bitte in den Systemeinstellungen erlauben"
+            "value": "Legt die Pause in die Tagesmitte; Beginn, Ende und Arbeitszeit bleiben exakt."
           }
         }
       }
@@ -3754,6 +3716,16 @@
         }
       }
     },
+    "Public holidays": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gesetzliche Feiertage"
+          }
+        }
+      }
+    },
     "Purple": {
       "localizations": {
         "de": {
@@ -3764,12 +3736,22 @@
         }
       }
     },
-    "Quit Working Hours. A running timer keeps counting.": {
+    "Quit (timer keeps running)": {
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Working Hours beenden. Ein laufender Timer zählt weiter."
+            "value": "Beenden (Timer läuft weiter)"
+          }
+        }
+      }
+    },
+    "Quitting keeps the timer in the menu bar; its power button quits fully.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Beenden lässt den Timer in der Menüleiste; ganz beenden über den Ein/Aus-Knopf dort."
           }
         }
       }
@@ -3854,22 +3836,48 @@
         }
       }
     },
-    "Replace existing entries": {
+    "Replace existing work blocks": {
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Vorhandene Einträge ersetzen"
+            "value": "Vorhandene Arbeitsblöcke ersetzen"
           }
         }
       }
     },
-    "Replaces entries": {
+    "Replaces all jobs and work blocks with the backup from %@ (%@, %@).": {
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Ersetzt Einträge"
+            "value": "Ersetzt alle Jobs und Arbeitsblöcke durch das Backup vom %@ (%@, %@)."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Replaces all jobs and work blocks with the backup from %1$@ (%2$@, %3$@)."
+          }
+        }
+      }
+    },
+    "Replaces work blocks": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ersetzt Arbeitsblöcke"
+          }
+        }
+      }
+    },
+    "Required breaks and the 10-hour limit (German ArbZG)": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pflichtpausen und 10-Stunden-Grenze (ArbZG)"
           }
         }
       }
@@ -3884,17 +3892,7 @@
         }
       }
     },
-    "Restore backup": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Backup wiederherstellen"
-          }
-        }
-      }
-    },
-    "Restore backup?": {
+    "Restore Backup?": {
       "localizations": {
         "de": {
           "stringUnit": {
@@ -3904,12 +3902,22 @@
         }
       }
     },
-    "Restoring failed: %@": {
+    "Restored backup from %@": {
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Wiederherstellen fehlgeschlagen: %@"
+            "value": "Backup vom %@ wiederhergestellt"
+          }
+        }
+      }
+    },
+    "Restore…": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wiederherstellen…"
           }
         }
       }
@@ -3934,18 +3942,18 @@
         }
       }
     },
-    "Rounded to %lld minutes (tracked: %@ h work, %@ h break).": {
+    "Rounded to %lld min (tracked: %@ h work, %@ h break).": {
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Gerundet auf %lld Minuten (erfasst: %@ h Arbeit, %@ h Pause)."
+            "value": "Gerundet auf %lld min (erfasst: %@ h Arbeit, %@ h Pause)."
           }
         },
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Rounded to %1$lld minutes (tracked: %2$@ h work, %3$@ h break)."
+            "value": "Rounded to %1$lld min (tracked: %2$@ h work, %3$@ h break)."
           }
         }
       }
@@ -3956,6 +3964,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "Rundung"
+          }
+        }
+      }
+    },
+    "Rounds start, working time and break; the end follows from them.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rundet Beginn, Arbeitszeit und Pause; das Ende ergibt sich daraus."
           }
         }
       }
@@ -4006,16 +4024,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "Sichern"
-          }
-        }
-      }
-    },
-    "Save…": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Sichern…"
           }
         }
       }
@@ -4080,6 +4088,16 @@
         }
       }
     },
+    "Set up your first job so target and balance are right; change it later in Settings.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Richte deinen ersten Job ein, damit Soll und Saldo stimmen; ändern kannst du alles später in den Einstellungen."
+          }
+        }
+      }
+    },
     "Settings": {
       "localizations": {
         "de": {
@@ -4116,6 +4134,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "Timer in der Menüleiste anzeigen"
+          }
+        }
+      }
+    },
+    "Show warnings": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Warnungen anzeigen"
           }
         }
       }
@@ -4190,6 +4218,16 @@
         }
       }
     },
+    "Start can’t be in the future": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Beginn darf nicht in der Zukunft liegen"
+          }
+        }
+      }
+    },
     "Start missing": {
       "localizations": {
         "de": {
@@ -4210,12 +4248,12 @@
         }
       }
     },
-    "Start the timer or add an entry manually.": {
+    "Start the timer or add a work block.": {
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Starte den Timer oder füge einen Eintrag manuell hinzu."
+            "value": "Starte den Timer oder füge einen Arbeitsblock hinzu."
           }
         }
       }
@@ -4230,12 +4268,22 @@
         }
       }
     },
-    "Start, working time and break are rounded to the nearest step; the end follows from them.": {
+    "Start, end and break appear here once you track time.": {
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Beginn, Arbeitszeit und Pause werden zum nächsten Rasterwert gerundet, das Ende ergibt sich daraus."
+            "value": "Beginn, Ende und Pause erscheinen hier, sobald du Zeit erfasst."
+          }
+        }
+      }
+    },
+    "Starting balance as of this date; earlier work blocks stay but no longer count.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Startsaldo zu diesem Datum; frühere Arbeitsblöcke bleiben, zählen aber nicht mehr."
           }
         }
       }
@@ -4420,80 +4468,60 @@
         }
       }
     },
-    "Target %@ h, %@ h left.": {
+    "Target %@ h, %@ h left": {
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Soll %@ h, noch %@ h offen."
+            "value": "Soll %@ h, noch %@ h offen"
           }
         },
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Target %1$@ h, %2$@ h left."
+            "value": "Target %1$@ h, %2$@ h left"
           }
         }
       }
     },
-    "Target %@ h, %@ h to go. Reached at %@.": {
+    "Target %@ h, %@ h to go, reached at %@": {
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Soll %@ h, noch %@ h. Erreicht um %@."
+            "value": "Soll %@ h, noch %@ h, erreicht um %@"
           }
         },
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Target %1$@ h, %2$@ h to go. Reached at %3$@."
+            "value": "Target %1$@ h, %2$@ h to go, reached at %3$@"
           }
         }
       }
     },
-    "Target hours per day": {
+    "Target of %@ h reached, %@ h over": {
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Sollarbeitszeit pro Tag"
-          }
-        }
-      }
-    },
-    "Target hours per week": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Sollarbeitszeit pro Woche"
-          }
-        }
-      }
-    },
-    "Target of %@ h reached, %@ h over.": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Soll von %@ h erreicht, %@ h darüber."
+            "value": "Soll von %@ h erreicht, %@ h darüber"
           }
         },
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Target of %1$@ h reached, %2$@ h over."
+            "value": "Target of %1$@ h reached, %2$@ h over"
           }
         }
       }
     },
-    "Target only on days with entries": {
+    "Target only on tracked days": {
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Soll nur an Tagen mit Erfassung"
+            "value": "Soll nur an erfassten Tagen"
           }
         }
       }
@@ -4503,27 +4531,17 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Sollzeit erreicht"
+            "value": "Soll erreicht"
           }
         }
       }
     },
-    "Target, workdays, rounding and break format. Without copying, 8 hours from Monday to Friday apply. You can change everything later in Settings under Jobs.": {
+    "Target, workdays, rounding and break format": {
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Soll, Arbeitstage, Rundung und Pausenformat. Ohne Übernahme gelten 8 Stunden von Montag bis Freitag. Du kannst alles später in den Einstellungen unter Jobs ändern."
-          }
-        }
-      }
-    },
-    "Target, workdays, rounding and the break format are set per job under Jobs.": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Soll, Arbeitstage, Rundung und das Format der Pause stellst du für jeden Job einzeln unter Jobs ein."
+            "value": "Soll, Arbeitstage, Rundung und Pausenformat"
           }
         }
       }
@@ -4548,82 +4566,12 @@
         }
       }
     },
-    "That did not work: %@": {
+    "The file contains no times.": {
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Das hat nicht geklappt: %@"
-          }
-        }
-      }
-    },
-    "The accent color marks running time, progress and the main action. Without your own color, the theme's color is used.": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Die Akzentfarbe markiert laufende Zeit, Fortschritt und die Hauptaktion. Ohne eigene Farbe gilt die Farbe des Themes."
-          }
-        }
-      }
-    },
-    "The backup comes from a newer version of Working Hours. Update the app first.": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Das Backup stammt aus einer neueren Version von Working Hours. Aktualisiere die App zuerst."
-          }
-        }
-      }
-    },
-    "The block from %@ will be removed permanently.": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Der Block ab %@ wird dauerhaft entfernt."
-          }
-        }
-      }
-    },
-    "The break is placed in the middle of the day. Start, end and working time stay exact.": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Die Pause wird in die Mitte des Tages gelegt. Beginn, Ende und Arbeitszeit bleiben exakt."
-          }
-        }
-      }
-    },
-    "The daily maximum of 10 working hours is exceeded (§ 3 ArbZG).": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Die tägliche Höchstarbeitszeit von 10 Stunden ist überschritten (§ 3 ArbZG)."
-          }
-        }
-      }
-    },
-    "The end must be after the start.": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Das Ende muss nach dem Beginn liegen."
-          }
-        }
-      }
-    },
-    "The file could not be read.": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Die Datei konnte nicht gelesen werden."
+            "value": "Die Datei enthält keine Zeiten."
           }
         }
       }
@@ -4634,16 +4582,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "Die Datei ist kein Backup von Working Hours."
-          }
-        }
-      }
-    },
-    "The file is not a valid Excel file (.xlsx).": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Die Datei ist keine gültige Excel-Datei (.xlsx)."
           }
         }
       }
@@ -4668,46 +4606,6 @@
         }
       }
     },
-    "The job and its %lld work blocks will be deleted permanently. Export the times in History first if you want to keep them.": {
-      "localizations": {
-        "de": {
-          "variations": {
-            "plural": {
-              "one": {
-                "stringUnit": {
-                  "state": "translated",
-                  "value": "Der Job und %lld Arbeitsblock werden dauerhaft gelöscht. Exportiere die Zeiten vorher im Verlauf, falls du sie behalten möchtest."
-                }
-              },
-              "other": {
-                "stringUnit": {
-                  "state": "translated",
-                  "value": "Der Job und %lld Arbeitsblöcke werden dauerhaft gelöscht. Exportiere die Zeiten vorher im Verlauf, falls du sie behalten möchtest."
-                }
-              }
-            }
-          }
-        },
-        "en": {
-          "variations": {
-            "plural": {
-              "one": {
-                "stringUnit": {
-                  "state": "translated",
-                  "value": "The job and its %lld work block will be deleted permanently. Export the times in History first if you want to keep them."
-                }
-              },
-              "other": {
-                "stringUnit": {
-                  "state": "translated",
-                  "value": "The job and its %lld work blocks will be deleted permanently. Export the times in History first if you want to keep them."
-                }
-              }
-            }
-          }
-        }
-      }
-    },
     "The last job cannot be deleted": {
       "localizations": {
         "de": {
@@ -4718,54 +4616,12 @@
         }
       }
     },
-    "The old Excel format (.xls) is not supported. Please save the file in Excel as .xlsx or .csv.": {
+    "The old .xls format isn’t supported. Save it in Excel as .xlsx or .csv.": {
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Das alte Excel-Format (.xls) wird nicht unterstützt. Speichere die Datei in Excel bitte als .xlsx oder .csv."
-          }
-        }
-      }
-    },
-    "The start must not be in the future.": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Der Beginn darf nicht in der Zukunft liegen."
-          }
-        }
-      }
-    },
-    "The timer has been running since %@, %@": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Der Timer läuft seit %@, %@"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "The timer has been running since %1$@, %2$@"
-          }
-        }
-      }
-    },
-    "The timer is running for %@ (%@). Starting here ends that block.": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Der Timer läuft gerade für %@ (%@). Starten hier beendet diesen Block."
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "The timer is running for %1$@ (%2$@). Starting here ends that block."
+            "value": "Das alte .xls-Format wird nicht unterstützt. Speichere die Datei in Excel als .xlsx oder .csv."
           }
         }
       }
@@ -4776,6 +4632,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "Der Timer lief weiter. Öffne Working Hours, um die Zeit als Pause abzuziehen."
+          }
+        }
+      }
+    },
+    "The work block from %@ can’t be restored.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der Arbeitsblock ab %@ lässt sich nicht wiederherstellen."
           }
         }
       }
@@ -4800,16 +4666,6 @@
         }
       }
     },
-    "There is no target on holidays, but entered hours still count. Mark your own days off in History via Absence.": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "An Feiertagen gibt es kein Soll, eingetragene Stunden zählen trotzdem. Eigene freie Tage markierst du im Verlauf über Abwesenheit."
-          }
-        }
-      }
-    },
     "This Month": {
       "localizations": {
         "de": {
@@ -4830,12 +4686,22 @@
         }
       }
     },
-    "This picture could not be read.": {
+    "This backup is from a newer version. Update Working Hours first.": {
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Dieses Bild konnte nicht gelesen werden."
+            "value": "Das Backup stammt aus einer neueren Version. Aktualisiere Working Hours zuerst."
+          }
+        }
+      }
+    },
+    "This can’t be undone.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Das lässt sich nicht rückgängig machen."
           }
         }
       }
@@ -4846,16 +4712,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "In diesem Blatt stehen keine Zeiten."
-          }
-        }
-      }
-    },
-    "This work block will be removed permanently.": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dieser Arbeitsblock wird dauerhaft entfernt."
           }
         }
       }
@@ -4920,6 +4776,22 @@
         }
       }
     },
+    "Timer running since %@, %@": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Timer läuft seit %@, %@"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Timer running since %1$@, %2$@"
+          }
+        }
+      }
+    },
     "Timesheet": {
       "localizations": {
         "de": {
@@ -4946,32 +4818,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "Heute"
-          }
-        }
-      }
-    },
-    "Today is %@, no target for %@.": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Heute ist %@, kein Soll für %@."
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Today is %1$@, no target for %2$@."
-          }
-        }
-      }
-    },
-    "Today is not a workday for %@.": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Heute ist für %@ kein Arbeitstag."
           }
         }
       }
@@ -5026,12 +4872,42 @@
         }
       }
     },
-    "Tracked days appear here. You can bring in existing hours from CSV or Excel.": {
+    "Tracked days appear here, or import hours from CSV or Excel.": {
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Erfasste Tage erscheinen hier. Vorhandene Stunden kannst du aus CSV oder Excel übernehmen."
+            "value": "Erfasste Tage erscheinen hier, oder importiere Stunden aus CSV oder Excel."
+          }
+        }
+      }
+    },
+    "Tracked days appear here.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erfasste Tage erscheinen hier."
+          }
+        }
+      }
+    },
+    "Tracked months appear here.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erfasste Monate erscheinen hier."
+          }
+        }
+      }
+    },
+    "Tracked since": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erfasst seit"
           }
         }
       }
@@ -5056,6 +4932,26 @@
         }
       }
     },
+    "Untracked workdays don’t count as minus hours": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Arbeitstage ohne Erfassung zählen nicht als Minus"
+          }
+        }
+      }
+    },
+    "Up to date": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aktuell"
+          }
+        }
+      }
+    },
     "Updates": {
       "localizations": {
         "de": {
@@ -5066,22 +4962,22 @@
         }
       }
     },
+    "Use Location": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Standort verwenden"
+          }
+        }
+      }
+    },
     "Use carry-over": {
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
             "value": "Saldo-Übertrag verwenden"
-          }
-        }
-      }
-    },
-    "Use public holidays": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Gesetzliche Feiertage berücksichtigen"
           }
         }
       }
@@ -5106,22 +5002,12 @@
         }
       }
     },
-    "Version %@ is available.": {
+    "Version %@ available": {
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Version %@ ist verfügbar."
-          }
-        }
-      }
-    },
-    "Warn about breaks and maximum hours (German ArbZG)": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Auf Pausen- und Höchstarbeitszeiten nach ArbZG hinweisen"
+            "value": "Version %@ verfügbar"
           }
         }
       }
@@ -5182,16 +5068,6 @@
         }
       }
     },
-    "When you quit, the timer stays in the menu bar. To quit completely, use the power button there.": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Beim Beenden bleibt der Timer in der Menüleiste. Ganz beenden kannst du die App dort über den Ein/Aus-Knopf."
-          }
-        }
-      }
-    },
     "Whit Monday": {
       "localizations": {
         "de": {
@@ -5218,32 +5094,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "Wird ergänzt"
-          }
-        }
-      }
-    },
-    "With more than %lld hours of work, at least %lld minutes of break are required (§ 4 ArbZG, only interruptions of 15 minutes or more count). Counted so far: %@ h.": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Bei mehr als %lld Stunden Arbeit sind mindestens %lld Minuten Pause vorgeschrieben (§ 4 ArbZG, nur Unterbrechungen ab 15 Minuten zählen). Anrechenbar erfasst: %@ h."
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "With more than %1$lld hours of work, at least %2$lld minutes of break are required (§ 4 ArbZG, only interruptions of 15 minutes or more count). Counted so far: %3$@ h."
-          }
-        }
-      }
-    },
-    "Without a job, the last selected one.": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Ohne Angabe der zuletzt gewählte Job."
           }
         }
       }
@@ -5294,6 +5144,16 @@
         }
       }
     },
+    "Work blocks of all jobs": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Arbeitsblöcke aller Jobs"
+          }
+        }
+      }
+    },
     "Work blocks today": {
       "localizations": {
         "de": {
@@ -5310,6 +5170,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "Arbeitstage"
+          }
+        }
+      }
+    },
+    "Workdays only": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nur Arbeitstage"
           }
         }
       }
@@ -5344,12 +5214,12 @@
         }
       }
     },
-    "Working Hours is up to date.": {
+    "Working Time Law": {
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Working Hours ist aktuell."
+            "value": "Arbeitszeitgesetz"
           }
         }
       }
@@ -5723,12 +5593,12 @@
         }
       }
     },
-    "only days with entries": {
+    "only tracked days": {
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "nur Tage mit Erfassung"
+            "value": "nur erfasste Tage"
           }
         }
       }

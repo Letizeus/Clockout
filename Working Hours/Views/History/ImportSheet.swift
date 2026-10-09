@@ -62,7 +62,7 @@ struct ImportSheet: View {
                     .foregroundStyle(.tertiary)
                 Text("Import hours from CSV or Excel")
                     .font(.system(size: 15, weight: .semibold))
-                Text("Drop a file here or choose one. Supported are .csv and .xlsx, for example your timesheet or an export from this app.")
+                Text("Drop a .csv or .xlsx file here, such as your timesheet or an export from this app.")
                     .font(AppFont.body)
                     .multilineTextAlignment(.center)
                     .foregroundStyle(.secondary)
@@ -235,7 +235,7 @@ private struct ImportConfiguration: View {
             } header: {
                 Text("Map Columns")
             } footer: {
-                Text("Needed are date, start and end, or the work blocks from an export of this app.")
+                Text("Needs date, start and end, or the work blocks column of an export.")
                     .foregroundStyle(.secondary)
             }
 
@@ -247,12 +247,12 @@ private struct ImportConfiguration: View {
                         }
                     }
                 } footer: {
-                    Text("The break is placed in the middle of the day. Start, end and working time stay exact.")
+                    Text("Places the break mid-day; start, end and working time stay exact.")
                         .foregroundStyle(.secondary)
                 }
             }
 
-            Section("Days with existing entries") {
+            Section("Days already tracked") {
                 Picker("Approach", selection: $strategy) {
                     ForEach(ImportConflictStrategy.allCases) { strategy in
                         Text(strategy.title).tag(strategy)
@@ -274,7 +274,7 @@ private struct ImportConfiguration: View {
                 EmptyState(
                     systemImage: "arrow.left.and.right",
                     title: "Map Columns",
-                    message: "Choose on the left which column holds the date, start and end."
+                    message: "Choose the columns for date, start and end on the left."
                 )
             } else if rows.isEmpty {
                 EmptyState(systemImage: "tablecells", title: "No rows found", message: "This sheet contains no times.")
@@ -319,7 +319,7 @@ private struct ImportConfiguration: View {
             guard let day = row.day, existingDays.contains(day) else { return (String(localized: "New"), "checkmark.circle", .brand) }
             switch strategy {
             case .skipExistingDays: return (String(localized: "Already tracked"), "arrow.uturn.right.circle", .amber)
-            case .replaceExistingDays: return (String(localized: "Replaces entries"), "arrow.triangle.2.circlepath", .amber)
+            case .replaceExistingDays: return (String(localized: "Replaces work blocks"), "arrow.triangle.2.circlepath", .amber)
             case .add: return (String(localized: "Will be added"), "plus.circle", .secondary)
             }
         }()

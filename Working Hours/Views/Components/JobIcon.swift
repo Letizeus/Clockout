@@ -96,7 +96,7 @@ struct JobIconPicker: View {
                         }
                     }
                 }
-                Text(failed ? "This picture could not be read." : "PNG, JPEG or HEIC, cropped to a square.")
+                Text(failed ? "Can’t read this picture. Try PNG or JPEG." : "PNG, JPEG or HEIC, cropped to a square")
                     .font(.caption)
                     .foregroundStyle(failed ? Color.negative : Color.secondary)
             }

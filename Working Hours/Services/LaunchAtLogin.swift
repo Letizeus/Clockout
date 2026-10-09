@@ -19,7 +19,7 @@ struct LaunchAtLoginToggle: View {
             }
 
         if requiresApproval {
-            SettingsRow(title: "Please allow it in System Settings") {
+            SettingsRow(title: "Needs approval in System Settings") {
                 Button("Open Login Items") {
                     SMAppService.openSystemSettingsLoginItems()
                 }
@@ -47,7 +47,7 @@ struct LaunchAtLoginToggle: View {
             errorMessage = nil
         } catch {
             logger.error("Changing login item failed: \(error.localizedDescription)")
-            errorMessage = String(localized: "That did not work: \(error.localizedDescription)")
+            errorMessage = String(localized: "Couldn’t change the login item: \(error.localizedDescription)")
         }
         refresh()
     }

@@ -45,10 +45,9 @@ struct DayOverview: View {
                     Button {
                         editorTarget = .create(day: day, job: job)
                     } label: {
-                        Label("Entry", systemImage: "plus")
+                        Label("Add Work Block", systemImage: "plus")
                     }
                     .buttonStyle(.secondary(height: 28))
-                    .help("Add a work block manually")
                 }
 
                 switch mode {

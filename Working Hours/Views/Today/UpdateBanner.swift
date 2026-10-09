@@ -12,7 +12,7 @@ struct UpdateBanner: View {
                 Image(systemName: "arrow.down.circle")
                     .font(.system(size: 14, weight: .medium))
                     .foregroundStyle(Color.brand)
-                Text("Version \(release.version) is available.")
+                Text("Version \(release.version) available")
                     .font(AppFont.body)
                     .lineLimit(1)
                 Spacer(minLength: 8)

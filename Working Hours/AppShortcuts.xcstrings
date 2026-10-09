@@ -1,96 +1,142 @@
 {
-  "sourceLanguage": "en",
-  "strings": {
-    "End the workday in ${applicationName}": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Beende den Tag in ${applicationName}"
+  "sourceLanguage" : "en",
+  "strings" : {
+    "End the workday in ${applicationName}" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beende den Tag in ${applicationName}"
           }
         }
       }
     },
-    "Finish the day in ${applicationName}": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Feierabend in ${applicationName}"
+    "Finish the day in ${applicationName}" : {
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Feierabend in ${applicationName}"
+          }
+        },
+        "en" : {
+          "stringSet" : {
+            "state" : "new",
+            "values" : [
+              "Finish the day in ${applicationName}",
+              "End the workday in ${applicationName}"
+            ]
           }
         }
       }
     },
-    "Hours worked today in ${applicationName}": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Arbeitszeit heute in ${applicationName}"
+    "Hours worked today in ${applicationName}" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Arbeitszeit heute in ${applicationName}"
           }
         }
       }
     },
-    "How long did I work today in ${applicationName}": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Wie lange habe ich heute in ${applicationName} gearbeitet"
+    "How long did I work today in ${applicationName}" : {
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Wie lange habe ich heute in ${applicationName} gearbeitet"
+          }
+        },
+        "en" : {
+          "stringSet" : {
+            "state" : "new",
+            "values" : [
+              "How long did I work today in ${applicationName}",
+              "Hours worked today in ${applicationName}"
+            ]
           }
         }
       }
     },
-    "Pause ${applicationName}": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Pausiere ${applicationName}"
+    "Pause ${applicationName}" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pausiere ${applicationName}"
           }
         }
       }
     },
-    "Start ${applicationName}": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Starte ${applicationName}"
+    "Start ${applicationName}" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Starte ${applicationName}"
           }
         }
       }
     },
-    "Start ${job} in ${applicationName}": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Starte ${job} in ${applicationName}"
+    "Start ${job} in ${applicationName}" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Starte ${job} in ${applicationName}"
           }
         }
       }
     },
-    "Start the timer in ${applicationName}": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Timer in ${applicationName} starten"
+    "Start the timer in ${applicationName}" : {
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Timer in ${applicationName} starten"
+          }
+        },
+        "en" : {
+          "stringSet" : {
+            "state" : "new",
+            "values" : [
+              "Start the timer in ${applicationName}",
+              "Start ${applicationName}",
+              "Start ${job} in ${applicationName}"
+            ]
           }
         }
       }
     },
-    "Take a break in ${applicationName}": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Pause in ${applicationName}"
+    "Take a break in ${applicationName}" : {
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Pause in ${applicationName}"
+          }
+        },
+        "en" : {
+          "stringSet" : {
+            "state" : "new",
+            "values" : [
+              "Take a break in ${applicationName}",
+              "Pause ${applicationName}"
+            ]
           }
         }
       }
     }
   },
-  "version": "1.0"
+  "version" : "1.0"
 }

@@ -30,7 +30,7 @@ struct StartTimerIntent: AppIntent {
     static let title: LocalizedStringResource = "Start Timer"
     static let description = IntentDescription("Starts or resumes time tracking. If another job is running, it is ended.")
 
-    @Parameter(title: "Job", description: "Without a job, the last selected one.")
+    @Parameter(title: "Job", description: "Leave empty for the last selected job.")
     var job: JobEntity?
 
     @Dependency private var tracker: TimeTracker

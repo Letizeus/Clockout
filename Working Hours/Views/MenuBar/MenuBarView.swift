@@ -162,7 +162,7 @@ private struct MenuBarContent: View {
                 } label: {
                     Image(systemName: "power")
                 }
-                .help("Quit Working Hours. A running timer keeps counting.")
+                .help("Quit (timer keeps running)")
             }
             .buttonStyle(.ghost)
             .padding(.horizontal, 8)

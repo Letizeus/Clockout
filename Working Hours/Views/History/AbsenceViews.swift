@@ -17,7 +17,7 @@ struct AbsenceButton: View {
             Label(current?.title ?? String(localized: "Absence"), systemImage: current?.systemImage ?? "calendar.badge.minus")
         }
         .buttonStyle(.secondary(height: 28))
-        .help("Mark as vacation, sick day or holiday")
+        .help("Mark as day off")
         .popover(isPresented: $showsMenu, arrowEdge: .bottom) {
             VStack(alignment: .leading, spacing: 1) {
                 ForEach(AbsenceKind.allCases) { kind in
@@ -118,11 +118,11 @@ struct AbsenceSheet: View {
                     LabeledContent("To") {
                         ThemedDateField(date: $to)
                     }
-                    Toggle("Only workdays without holidays", isOn: $onlyWorkdays)
+                    Toggle("Workdays only", isOn: $onlyWorkdays)
                 } header: {
                     Text("Absence for \(job.displayName)")
                 } footer: {
-                    Text("\(days.count) days without target. Entries on these days still count as working time. Change single days in History.")
+                    Text("\(days.count) days without target; work on them still counts.")
                         .foregroundStyle(.secondary)
                 }
             }
@@ -144,7 +144,7 @@ struct AbsenceSheet: View {
                     dismiss()
                 }
                 .keyboardShortcut(.cancelAction)
-                Button("Add") {
+                Button("Add Absence") {
                     job.setAbsence(kind, on: days)
                     jobs.save()
                     dismiss()

@@ -43,8 +43,8 @@ struct ActualTimesList: View {
             if rows.isEmpty {
                 EmptyState(
                     systemImage: "clock",
-                    title: "No entries",
-                    message: "Start the timer or add an entry manually."
+                    title: "No work blocks",
+                    message: "Start the timer or add a work block."
                 )
             } else {
                 ForEach(rows) { row in
@@ -71,15 +71,15 @@ struct ActualTimesList: View {
         .card(padding: 0)
         .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
         .confirmationDialog(
-            "Delete entry?",
+            "Delete Work Block?",
             isPresented: Binding(get: { pendingDeletion != nil }, set: { if !$0 { pendingDeletion = nil } }),
             presenting: pendingDeletion
         ) { session in
-            Button("Delete", role: .destructive) {
+            Button("Delete Work Block", role: .destructive) {
                 tracker.delete(session)
             }
         } message: { session in
-            Text("The block from \(session.start.clockTime) will be removed permanently.")
+            Text("The work block from \(session.start.clockTime) can’t be restored.")
         }
     }
 }

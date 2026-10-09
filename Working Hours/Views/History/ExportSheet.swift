@@ -48,7 +48,7 @@ struct ExportSheet: View {
                         Button("Last Month") { setRange(.month, offset: -1) }
                     }
                     .controlSize(.small)
-                    Toggle("Include workdays without entries", isOn: $includeEmptyWorkdays)
+                    Toggle("Include untracked workdays", isOn: $includeEmptyWorkdays)
                 }
 
                 Section {
@@ -57,9 +57,6 @@ struct ExportSheet: View {
                     LabeledContent("Balance", value: "\(summary.balance.signedClock) h")
                 } header: {
                     Text("Preview")
-                } footer: {
-                    Text("One row per day with start, end and break for the timesheet, plus the individual work blocks. The file uses your number format and opens directly in Excel or Numbers.")
-                        .foregroundStyle(.secondary)
                 }
 
                 if let errorMessage {

@@ -33,11 +33,15 @@ struct TimesheetPanel: View {
                 .card(padding: 0)
 
                 HStack(alignment: .top, spacing: 12) {
-                    Callout(systemImage: "info.circle", text: "\(explanation(for: entry))")
+                    if let explanation = explanation(for: entry) {
+                        Callout(systemImage: "info.circle", text: "\(explanation)")
+                    } else {
+                        Spacer()
+                    }
 
                     Menu {
                         Button("Copy as Text") { Pasteboard.copy(plainText(entry, pause: pause.copy)) }
-                        Button("Copy as Table Row (Tab-Separated)") { Pasteboard.copy(tabSeparated(entry, pause: pause.copy)) }
+                        Button("Copy as Table Row") { Pasteboard.copy(tabSeparated(entry, pause: pause.copy)) }
                     } label: {
                         Label("Copy All", systemImage: "square.on.square")
                     } primaryAction: {
@@ -55,25 +59,24 @@ struct TimesheetPanel: View {
         } else {
             EmptyState(
                 systemImage: "list.clipboard",
-                title: "Nothing for the timesheet yet",
-                message: "As soon as working time is tracked, you see start, end and break here, ready to copy."
+                title: "Nothing to copy yet",
+                message: "Start, end and break appear here once you track time."
             )
             .card(padding: 0)
         }
     }
 
-    private func explanation(for entry: TimesheetEntry) -> String {
+    /// How the line was made, when it differs from what was tracked. `nil` for one block without rounding.
+    private func explanation(for entry: TimesheetEntry) -> String? {
+        var parts: [String] = []
         let blocks = report.workIntervals.count
-        var text: String
         if blocks > 1 {
-            text = String(localized: "\(blocks) work blocks combined: the start is your first start, the break contains all interruptions, and the end follows from start, working time and break.")
-        } else {
-            text = String(localized: "One continuous work block without interruption.")
+            parts.append(String(localized: "Combines \(blocks) work blocks: first start, gaps as break."))
         }
         if job.roundingMinutes > 1 {
-            text += " " + String(localized: "Rounded to \(job.roundingMinutes) minutes (tracked: \(report.workedDuration.clock) h work, \(report.breakDuration.clock) h break).")
+            parts.append(String(localized: "Rounded to \(job.roundingMinutes) min (tracked: \(report.workedDuration.clock) h work, \(report.breakDuration.clock) h break)."))
         }
-        return text
+        return parts.isEmpty ? nil : parts.joined(separator: " ")
     }
 
     private func plainText(_ entry: TimesheetEntry, pause: String) -> String {
@@ -150,9 +153,9 @@ struct ComplianceNotice: View {
         switch issue {
         case .insufficientBreak(let worked, let required, let taken):
             let threshold = worked > 9 * 3600 ? 9 : 6
-            return String(localized: "With more than \(threshold) hours of work, at least \(required.wholeMinutes) minutes of break are required (§ 4 ArbZG, only interruptions of 15 minutes or more count). Counted so far: \(taken.clock) h.")
+            return String(localized: "More than \(threshold) h of work needs \(required.wholeMinutes) min of break in parts of at least 15 min (§ 4 ArbZG). Counted: \(taken.clock) h.")
         case .exceedsDailyMaximum:
-            return String(localized: "The daily maximum of 10 working hours is exceeded (§ 3 ArbZG).")
+            return String(localized: "Over the 10-hour daily maximum (§ 3 ArbZG)")
         }
     }
 }

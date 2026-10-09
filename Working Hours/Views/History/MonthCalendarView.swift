@@ -62,7 +62,7 @@ struct MonthCalendarView: View {
         if total.absent > 0 {
             parts.append(String(localized: "\(total.absent) days absent"))
         }
-        return parts.isEmpty ? String(localized: "No entries this month") : parts.joined(separator: ", ")
+        return parts.isEmpty ? String(localized: "Nothing tracked this month") : parts.joined(separator: ", ")
     }
 
     var body: some View {

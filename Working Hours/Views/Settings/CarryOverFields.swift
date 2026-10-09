@@ -66,5 +66,5 @@ struct SignedDurationField: View {
 
 /// Where the carry-over is explained in both places.
 enum CarryOverText {
-    static let footer: LocalizedStringResource = "For hours you already had before, for example from last year. The total balance is then this carry-over plus all days from the chosen date. Older entries are kept but no longer count."
+    static let footer: LocalizedStringResource = "Starting balance as of this date; earlier work blocks stay but no longer count."
 }

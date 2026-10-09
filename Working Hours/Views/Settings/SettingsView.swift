@@ -125,26 +125,27 @@ private struct GeneralSettingsView: View {
             SettingsSection(
                 title: "Startup",
                 footer: settings.showMenuBarExtra
-                    ? "When you quit, the timer stays in the menu bar. To quit completely, use the power button there."
+                    ? "Quitting keeps the timer in the menu bar; its power button quits fully."
                     : nil
             ) {
                 LaunchAtLoginToggle()
                 SettingsToggle(title: "Show timer in the menu bar", isOn: $settings.showMenuBarExtra)
             }
 
-            SettingsSection(
-                title: "Hints",
-                footer: "Target, workdays, rounding and the break format are set per job under Jobs."
-            ) {
-                SettingsToggle(title: "Warn about breaks and maximum hours (German ArbZG)", isOn: $settings.showsComplianceHints)
+            SettingsSection(title: "Working Time Law") {
+                SettingsToggle(
+                    title: "Show warnings",
+                    subtitle: "Required breaks and the 10-hour limit (German ArbZG)",
+                    isOn: $settings.showsComplianceHints
+                )
             }
 
             @Bindable var updates = updates
             SettingsSection(
                 title: "Updates",
-                footer: "Once a day the app asks GitHub whether a newer version exists. No data about you or your hours is sent."
+                footer: "Asks GitHub once a day; nothing about you or your hours is sent."
             ) {
-                SettingsToggle(title: "Check for updates automatically", isOn: $updates.isEnabled)
+                SettingsToggle(title: "Check for updates", isOn: $updates.isEnabled)
                 SettingsRow(title: "Version \(Self.version)", subtitle: updateStatus) {
                     if let release = updates.offeredRelease {
                         Button("Download \(release.version)") { updates.openDownloadPage(for: release) }
@@ -167,9 +168,9 @@ private struct GeneralSettingsView: View {
         switch updates.state {
         case .idle: nil
         case .checking: "Checking…"
-        case .upToDate: "Working Hours is up to date."
-        case .available(let release): "Version \(release.version) is available."
-        case .failed: "Could not check for updates."
+        case .upToDate: "Up to date"
+        case .available(let release): "Version \(release.version) available"
+        case .failed: "Couldn’t reach GitHub. Try again later."
         }
     }
 }
@@ -243,12 +244,12 @@ private struct JobsSettingsView: View {
             isPresented: Binding(get: { pendingDeletion != nil }, set: { if !$0 { pendingDeletion = nil } }),
             presenting: pendingDeletion
         ) { job in
-            Button("Delete Job and Entries", role: .destructive) {
+            Button("Delete Job", role: .destructive) {
                 tracker.deleteJob(job)
                 selectedID = jobs.currentJob.uuid
             }
         } message: { job in
-            Text("The job and its \(tracker.sessions(of: job).count) work blocks will be deleted permanently. Export the times in History first if you want to keep them.")
+            Text("Deletes the job and its \(tracker.sessions(of: job).count) work blocks. This can’t be undone.")
         }
     }
 }
@@ -333,8 +334,8 @@ private struct JobEditor: View {
                 }
 
             case .workTime:
-                SettingsSection(footer: "Otherwise a workday without entries counts as minus hours. Before the first day of work, on holidays and on absence days from History there is no target.") {
-                    SettingsRow(title: "Enter target") {
+                SettingsSection {
+                    SettingsRow(title: "Target") {
                         PillTabs(
                             options: TargetMode.allCases.map { ($0, $0.title) },
                             selection: Binding(get: { job.targetMode }, set: { job.changeTargetMode(to: $0) })
@@ -342,12 +343,12 @@ private struct JobEditor: View {
                     }
                     switch job.targetMode {
                     case .daily:
-                        SettingsRow(title: "Target hours per day", subtitle: "Weekly target \(job.weeklyTarget.clock) h") {
+                        SettingsRow(title: "Hours per day", subtitle: "Weekly target \(job.weeklyTarget.clock) h") {
                             DurationField(minutes: $job.dailyTargetMinutes, range: 0...(16 * 60), step: 15)
                         }
                     case .weekly:
                         SettingsRow(
-                            title: "Target hours per week",
+                            title: "Hours per week",
                             subtitle: job.workdays.isEmpty ? nil : "\(job.dailyTarget.clock) h per workday"
                         ) {
                             DurationField(minutes: $job.weeklyTargetMinutes, range: 0...(80 * 60), step: 30)
@@ -356,7 +357,11 @@ private struct JobEditor: View {
                     SettingsRow(title: "Workdays") {
                         WeekdayPicker(selection: $job.workdays)
                     }
-                    SettingsToggle(title: "Target only on days with entries", isOn: $job.targetOnlyOnTrackedDays)
+                    SettingsToggle(
+                        title: "Target only on tracked days",
+                        subtitle: "Untracked workdays don’t count as minus hours",
+                        isOn: $job.targetOnlyOnTrackedDays
+                    )
                     StartDateRow(job: job)
                 }
 
@@ -369,7 +374,7 @@ private struct JobEditor: View {
                 }
 
             case .timesheet:
-                SettingsSection(footer: "Start, working time and break are rounded to the nearest step; the end follows from them.") {
+                SettingsSection(footer: "Rounds start, working time and break; the end follows from them.") {
                     SettingsRow(title: "Rounding") {
                         Picker("Rounding", selection: $job.roundingMinutes) {
                             Text("Exact to the minute").tag(1)
@@ -414,11 +419,11 @@ private struct ReminderSettingsView: View {
                     isOn: Binding(get: { settings.remindersEnabled }, set: { setRemindersEnabled($0) })
                 )
                 if permissionDenied {
-                    SettingsNotice(systemImage: "exclamationmark.triangle", text: "Notifications are turned off in System Settings.")
+                    SettingsNotice(systemImage: "exclamationmark.triangle", text: "Notifications are off. Turn them on in System Settings.")
                 }
             }
 
-            SettingsSection(footer: "German law requires a break after 6 hours of work at the latest. The reminder refers to the current work block.") {
+            SettingsSection(footer: "German law requires a break after 6 hours of work.") {
                 SettingsRow(title: "Break reminder") {
                     Picker("Break reminder", selection: $settings.breakReminderMinutes) {
                         Text("Off").tag(0)
@@ -429,14 +434,14 @@ private struct ReminderSettingsView: View {
                     .labelsHidden()
                     .fixedSize()
                 }
-                SettingsToggle(title: "Notify when the target is reached", isOn: $settings.targetReminderEnabled)
+                SettingsToggle(title: "Target reached", isOn: $settings.targetReminderEnabled)
             }
             .disabled(!settings.remindersEnabled)
             .opacity(settings.remindersEnabled ? 1 : 0.5)
 
-            SettingsSection(footer: "If the timer runs while nobody uses the Mac or it sleeps, the app asks on your return whether the time was a break. With notifications also when the window is closed.") {
-                SettingsRow(title: "Detect time away") {
-                    Picker("Detect time away", selection: $settings.awayDetectionMinutes) {
+            SettingsSection(footer: "Asks whether idle time while the timer ran was a break.") {
+                SettingsRow(title: "Ask about idle time") {
+                    Picker("Ask about idle time", selection: $settings.awayDetectionMinutes) {
                         Text("Off").tag(0)
                         ForEach([5, 10, 15, 30, 60], id: \.self) { minutes in
                             Text("after \(minutes) minutes").tag(minutes)
@@ -491,7 +496,7 @@ private struct DataSettingsView: View {
                             .foregroundStyle(.secondary)
                     }
                 }
-                SettingsRow(title: "First entry") {
+                SettingsRow(title: "Tracked since") {
                     Text(sessions.first?.start.numericDate ?? "-")
                         .font(AppFont.body.monospacedDigit())
                         .foregroundStyle(.secondary)
@@ -504,25 +509,23 @@ private struct DataSettingsView: View {
             }
 
             SettingsSection(
-                title: "Backup",
-                footer: backupMessage.map { LocalizedStringResource("\($0)") } ?? "Contains all jobs with their rules, pictures, absences, carry-over and entries. Use it to move to a new Mac, too. Restoring replaces the current data."
+                footer: backupMessage.map { LocalizedStringResource("\($0)") } ?? "Includes all jobs, rules and work blocks; restoring replaces everything on this Mac."
             ) {
-                SettingsRow(title: "Create backup") {
-                    Button("Save…", action: exportBackup)
-                        .buttonStyle(.secondary(height: 26))
-                }
-                SettingsRow(title: "Restore backup") {
-                    Button("Open…") { showsBackupImporter = true }
-                        .buttonStyle(.secondary(height: 26))
+                SettingsRow(title: "Backup") {
+                    HStack(spacing: 6) {
+                        Button("Create…", action: exportBackup)
+                        Button("Restore…") { showsBackupImporter = true }
+                    }
+                    .buttonStyle(.secondary(height: 26))
                 }
             }
 
-            SettingsSection(footer: "Create a backup first or export your times as CSV in History if you want to keep them.") {
-                SettingsRow(title: "Delete all entries of all jobs") {
+            SettingsSection {
+                SettingsRow(title: "Work blocks of all jobs") {
                     Button {
                         confirmsDeletion = true
                     } label: {
-                        Text("Delete All Data…")
+                        Text("Delete All…")
                             .foregroundStyle(Color.negative)
                     }
                     .buttonStyle(.secondary(height: 26))
@@ -546,7 +549,7 @@ private struct DataSettingsView: View {
             }
         }
         .confirmationDialog(
-            "Restore backup?",
+            "Restore Backup?",
             isPresented: Binding(get: { pendingRestore != nil }, set: { if !$0 { pendingRestore = nil } }),
             presenting: pendingRestore
         ) { backup in
@@ -554,14 +557,14 @@ private struct DataSettingsView: View {
         } message: { backup in
             let jobCount = String(localized: "\(backup.jobs.count) jobs")
             let blockCount = String(localized: "\(backup.sessions.count) work blocks")
-            Text("Backup from \(backup.createdAt.numericDate): \(jobCount), \(blockCount). This replaces all current jobs and entries.")
+            Text("Replaces all jobs and work blocks with the backup from \(backup.createdAt.numericDate) (\(jobCount), \(blockCount)).")
         }
-        .confirmationDialog("Delete all entries?", isPresented: $confirmsDeletion) {
-            Button("Delete All", role: .destructive) {
+        .confirmationDialog("Delete All Work Blocks?", isPresented: $confirmsDeletion) {
+            Button("Delete Work Blocks", role: .destructive) {
                 tracker.deleteAllData()
             }
         } message: {
-            Text("\(sessions.count) work blocks of all jobs will be removed permanently. The jobs and their rules are kept. This cannot be undone.")
+            Text("Deletes all \(sessions.count) work blocks for good; jobs and their rules stay.")
         }
     }
 
@@ -579,9 +582,9 @@ private struct DataSettingsView: View {
     private func restore(_ backup: Backup) {
         do {
             try backup.restore(into: context, tracker: tracker, jobStore: jobs)
-            backupMessage = String(localized: "Backup from \(backup.createdAt.numericDate) restored.")
+            backupMessage = String(localized: "Restored backup from \(backup.createdAt.numericDate)")
         } catch {
-            backupMessage = String(localized: "Restoring failed: \(error.localizedDescription)")
+            backupMessage = String(localized: "Couldn’t restore the backup: \(error.localizedDescription)")
         }
     }
 }

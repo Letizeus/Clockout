@@ -100,7 +100,7 @@ struct Backup: Codable {
             switch self {
             case .tooLarge: String(localized: "The file is too large for a backup.")
             case .notABackup: String(localized: "The file is not a Working Hours backup.")
-            case .newerVersion: String(localized: "The backup comes from a newer version of Working Hours. Update the app first.")
+            case .newerVersion: String(localized: "This backup is from a newer version. Update Working Hours first.")
             }
         }
     }

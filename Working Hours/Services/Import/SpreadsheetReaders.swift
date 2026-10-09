@@ -36,10 +36,10 @@ nonisolated enum ImportError: LocalizedError {
 
     var errorDescription: String? {
         switch self {
-        case .unreadable: String(localized: "The file could not be read.")
-        case .notExcel: String(localized: "The file is not a valid Excel file (.xlsx).")
-        case .legacyExcel: String(localized: "The old Excel format (.xls) is not supported. Please save the file in Excel as .xlsx or .csv.")
-        case .empty: String(localized: "No data was found in the file.")
+        case .unreadable: String(localized: "Can’t read the file. Check that it’s a CSV or Excel file.")
+        case .notExcel: String(localized: "Not a valid Excel file. Save it again as .xlsx or .csv.")
+        case .legacyExcel: String(localized: "The old .xls format isn’t supported. Save it in Excel as .xlsx or .csv.")
+        case .empty: String(localized: "The file contains no times.")
         case .tooLarge: String(localized: "The file is too large for a timesheet.")
         }
     }

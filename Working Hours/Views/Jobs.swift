@@ -200,7 +200,7 @@ struct NewJobSheet: View {
                 Section {
                     Toggle("Copy rules from “\(jobs.currentJob.displayName)”", isOn: $copiesRules)
                 } footer: {
-                    Text("Target, workdays, rounding and break format. Without copying, 8 hours from Monday to Friday apply. You can change everything later in Settings under Jobs.")
+                    Text("Target, workdays, rounding and break format")
                         .foregroundStyle(.secondary)
                 }
             }
@@ -264,7 +264,7 @@ struct OtherJobRunningBanner: View {
     private func text(for active: Job) -> String {
         switch tracker.status(for: active) {
         case .working:
-            return String(localized: "The timer is running for \(active.displayName) (\(tracker.currentBlockDuration.stopwatch)). Starting here ends that block.")
+            return String(localized: "\(active.displayName) is running (\(tracker.currentBlockDuration.stopwatch)). Starting here ends that work block.")
         case .onBreak:
             return String(localized: "\(active.displayName) is on a break (\(tracker.currentBreakDuration.stopwatch)).")
         case .idle:

@@ -24,7 +24,7 @@ struct AppearanceSettingsView: View {
             }
 
             SettingsSection(footer: theme.fixedScheme.map { scheme -> LocalizedStringResource in
-                scheme == .dark ? "\(theme.name) is only available in dark." : "\(theme.name) is only available in light."
+                scheme == .dark ? "\(theme.name) is dark only" : "\(theme.name) is light only"
             }) {
                 SettingsRow(title: "Appearance mode") {
                     PillTabs(options: AppearanceMode.allCases.map { ($0, $0.title) }, selection: $settings.appearanceMode)
@@ -33,10 +33,7 @@ struct AppearanceSettingsView: View {
                 }
             }
 
-            SettingsSection(
-                title: "Accent Color",
-                footer: "The accent color marks running time, progress and the main action. Without your own color, the theme's color is used."
-            ) {
+            SettingsSection(title: "Accent Color") {
                 AccentPicker()
             }
         }

@@ -17,7 +17,7 @@ struct AwayBanner: View {
                     VStack(alignment: .leading, spacing: 2) {
                         Text("You were away for \(minutes) minutes")
                             .font(AppFont.bodyMedium)
-                        Text("Nobody used the Mac from \(away.start.clockTime) to \(away.end.clockTime), and the timer kept running.")
+                        Text("From \(away.start.clockTime) to \(away.end.clockTime), while the timer ran.")
                             .font(AppFont.body)
                             .foregroundStyle(.secondary)
                             .fixedSize(horizontal: false, vertical: true)

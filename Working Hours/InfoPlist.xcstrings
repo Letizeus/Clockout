@@ -1,26 +1,78 @@
 {
-  "sourceLanguage": "en",
-  "strings": {
-    "NSLocationUsageDescription": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Working Hours nutzt deinen Standort einmalig, um die gesetzlichen Feiertage deines Bundeslands oder Landes zu wählen. Der Standort wird nicht gespeichert."
+  "sourceLanguage" : "en",
+  "strings" : {
+    "CFBundleDisplayName" : {
+      "comment" : "Bundle display name",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Working Hours"
           }
         }
       }
     },
-    "NSLocationWhenInUseUsageDescription": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Working Hours nutzt deinen Standort einmalig, um die gesetzlichen Feiertage deines Bundeslands oder Landes zu wählen. Der Standort wird nicht gespeichert."
+    "CFBundleName" : {
+      "comment" : "Bundle name",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Working Hours"
+          }
+        }
+      }
+    },
+    "NSHumanReadableCopyright" : {
+      "comment" : "Copyright (human-readable)",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Copyright © 2026 Letizeus. MIT License."
+          }
+        }
+      }
+    },
+    "NSLocationUsageDescription" : {
+      "comment" : "Privacy - Location Usage Description",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Working Hours nutzt deinen Standort einmalig, um die gesetzlichen Feiertage deines Bundeslands oder Landes zu wählen. Der Standort wird nicht gespeichert."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Working Hours uses your location once to choose the public holidays of your country or state. The location is not stored."
+          }
+        }
+      }
+    },
+    "NSLocationWhenInUseUsageDescription" : {
+      "comment" : "Privacy - Location When In Use Usage Description",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Working Hours nutzt deinen Standort einmalig, um die gesetzlichen Feiertage deines Bundeslands oder Landes zu wählen. Der Standort wird nicht gespeichert."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Working Hours uses your location once to choose the public holidays of your country or state. The location is not stored."
           }
         }
       }
     }
   },
-  "version": "1.0"
+  "version" : "1.0"
 }

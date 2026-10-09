@@ -77,8 +77,8 @@ struct HistoryView: View {
                     VStack(spacing: 12) {
                         EmptyState(
                             systemImage: "calendar",
-                            title: "No entries yet",
-                            message: "Tracked days appear here. You can bring in existing hours from CSV or Excel."
+                            title: "Nothing tracked yet",
+                            message: "Tracked days appear here, or import hours from CSV or Excel."
                         )
                         Button("Import Hours…") {
                             showsImport = true
@@ -145,7 +145,7 @@ struct HistoryView: View {
                 Button("Absence", systemImage: "sun.max") {
                     showsAbsence = true
                 }
-                .help("Enter vacation, sick days or holidays")
+                .help("Add vacation or sick days")
             }
             ToolbarItem {
                 Button("Import", systemImage: "square.and.arrow.down") {
@@ -157,7 +157,7 @@ struct HistoryView: View {
                 Button("Export", systemImage: "square.and.arrow.up") {
                     showsExport = true
                 }
-                .help("Export working times as CSV")
+                .help("Export as CSV")
             }
         }
         .sheet(isPresented: $showsExport) {
@@ -279,13 +279,13 @@ private struct HistoryDayDetail: View {
     /// Why this workday has no target, if that is not obvious.
     private var noTargetNote: String? {
         if let absence = job.absence(on: day) {
-            return String(localized: "\(absence.title): no target on this day. Tracked time still counts as plus.")
+            return String(localized: "\(absence.title): no target; tracked time still counts.")
         }
         if let holiday = job.rules.holiday(on: day) {
-            return String(localized: "\(holiday.title) is a public holiday: no target, tracked time still counts as plus.")
+            return String(localized: "\(holiday.title): no target; tracked time still counts.")
         }
         if let start = job.startDate, Calendar.app.startOfDay(for: day) < Calendar.app.startOfDay(for: start) {
-            return String(localized: "Before your first day of work on \(start.numericDate), there is no target.")
+            return String(localized: "No target before your first day of work (\(start.numericDate)).")
         }
         return nil
     }

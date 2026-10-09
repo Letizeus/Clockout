@@ -20,7 +20,7 @@ struct OnboardingView: View {
                         Text("Welcome to Working Hours")
                             .font(.system(size: 17, weight: .semibold))
                             .foregroundStyle(Color.primary)
-                        Text("A few details about your job, so target and balance are right. You can change everything later under Settings > Jobs.")
+                        Text("Set up your first job so target and balance are right; change it later in Settings.")
                             .font(AppFont.body)
                             .foregroundStyle(.secondary)
                             .fixedSize(horizontal: false, vertical: true)
@@ -29,7 +29,7 @@ struct OnboardingView: View {
                 }
 
                 Section("Working time") {
-                    LabeledContent("Enter target") {
+                    LabeledContent("Target") {
                         PillTabs(
                             options: TargetMode.allCases.map { ($0, $0.title) },
                             selection: Binding(get: { job.targetMode }, set: { job.changeTargetMode(to: $0) })
@@ -54,7 +54,7 @@ struct OnboardingView: View {
                             set: { job.startDate = $0 }
                         ))
                     }
-                    Toggle("Target only on days with entries", isOn: $job.targetOnlyOnTrackedDays)
+                    Toggle("Target only on tracked days", isOn: $job.targetOnlyOnTrackedDays)
                 }
 
                 Section {
@@ -63,7 +63,7 @@ struct OnboardingView: View {
                             .foregroundStyle(.secondary)
                     }
                 } footer: {
-                    Text("Detected from your location or the region in System Settings. Country, state and single holidays are set under Settings > Jobs > Holidays.")
+                    Text("Detected from your location; change it in Settings > Jobs > Holidays.")
                         .foregroundStyle(.secondary)
                 }
             }

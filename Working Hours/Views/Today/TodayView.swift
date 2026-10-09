@@ -65,11 +65,8 @@ private struct StaleSessionBanner: View {
                 .font(.system(size: 15, weight: .medium))
                 .foregroundStyle(.amber)
             VStack(alignment: .leading, spacing: 2) {
-                Text("The timer has been running since \(session.start.shortDayTitle), \(session.start.clockTime)")
+                Text("Timer running since \(session.start.shortDayTitle), \(session.start.clockTime)")
                     .font(AppFont.bodyMedium)
-                Text("Did you forget to stop it? Set the actual end.")
-                    .font(AppFont.body)
-                    .foregroundStyle(.secondary)
             }
             Spacer()
             Button("Set End…", action: onFix)
@@ -127,7 +124,7 @@ struct TimerHeroView: View {
                     }
                     .buttonStyle(.secondary(height: 34))
                     .disabled(status == .idle)
-                    .help("End the working day (⇧⌘E)")
+                    .help("Finish day (⇧⌘E)")
 
                     TimerActionButton(status: status, title: tracker.primaryActionTitle(for: job), height: 34) {
                         tracker.togglePrimary(for: job)
@@ -142,17 +139,17 @@ struct TimerHeroView: View {
 
     private func targetLine(target: TimeInterval, status: TimeTracker.Status) -> String {
         guard target > 0 else {
-            if let dayOff = job.dayOff(on: now) { return String(localized: "Today is \(dayOff), no target for \(job.displayName).") }
-            return String(localized: "Today is not a workday for \(job.displayName).")
+            if let dayOff = job.dayOff(on: now) { return String(localized: "\(dayOff): no target for \(job.displayName) today") }
+            return String(localized: "Not a workday for \(job.displayName)")
         }
         let remaining = target - report.workedDuration
         guard remaining > 0 else {
-            return String(localized: "Target of \(target.clock) h reached, \(remaining.magnitude.clock) h over.")
+            return String(localized: "Target of \(target.clock) h reached, \(remaining.magnitude.clock) h over")
         }
         if status == .working {
-            return String(localized: "Target \(target.clock) h, \(remaining.clock) h to go. Reached at \(now.addingTimeInterval(remaining).clockTime).")
+            return String(localized: "Target \(target.clock) h, \(remaining.clock) h to go, reached at \(now.addingTimeInterval(remaining).clockTime)")
         }
-        return String(localized: "Target \(target.clock) h, \(remaining.clock) h left.")
+        return String(localized: "Target \(target.clock) h, \(remaining.clock) h left")
     }
 
     @ViewBuilder
