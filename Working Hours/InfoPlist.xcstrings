@@ -1,0 +1,26 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "NSLocationUsageDescription": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Working Hours nutzt deinen Standort einmalig, um die gesetzlichen Feiertage deines Bundeslands oder Landes zu wählen. Der Standort wird nicht gespeichert."
+          }
+        }
+      }
+    },
+    "NSLocationWhenInUseUsageDescription": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Working Hours nutzt deinen Standort einmalig, um die gesetzlichen Feiertage deines Bundeslands oder Landes zu wählen. Der Standort wird nicht gespeichert."
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}

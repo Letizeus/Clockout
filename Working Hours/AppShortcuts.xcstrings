@@ -1,0 +1,96 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "End the workday in ${applicationName}": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Beende den Tag in ${applicationName}"
+          }
+        }
+      }
+    },
+    "Finish the day in ${applicationName}": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Feierabend in ${applicationName}"
+          }
+        }
+      }
+    },
+    "Hours worked today in ${applicationName}": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Arbeitszeit heute in ${applicationName}"
+          }
+        }
+      }
+    },
+    "How long did I work today in ${applicationName}": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wie lange habe ich heute in ${applicationName} gearbeitet"
+          }
+        }
+      }
+    },
+    "Pause ${applicationName}": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pausiere ${applicationName}"
+          }
+        }
+      }
+    },
+    "Start ${applicationName}": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Starte ${applicationName}"
+          }
+        }
+      }
+    },
+    "Start ${job} in ${applicationName}": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Starte ${job} in ${applicationName}"
+          }
+        }
+      }
+    },
+    "Start the timer in ${applicationName}": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Timer in ${applicationName} starten"
+          }
+        }
+      }
+    },
+    "Take a break in ${applicationName}": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pause in ${applicationName}"
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}

@@ -1,0 +1,12 @@
+// Code signing for builds from Xcode.
+//
+// Builds are signed to run locally, which needs no Apple Developer account.
+// To sign with your own team, create Config/Local.xcconfig (ignored by git) containing:
+//
+//     DEVELOPMENT_TEAM = ABCDE12345
+//     CODE_SIGN_IDENTITY = Apple Development
+
+CODE_SIGN_IDENTITY = -
+DEVELOPMENT_TEAM =
+
+#include? "Local.xcconfig"
