@@ -3,6 +3,8 @@
   <img alt="Clockout: track your day with every pause, copy it as one timesheet line" src=".github/banner-light.png">
 </picture>
 
+<br/>
+
 A native macOS app for tracking working hours, made for timesheets that only ask for *from*, *to* and *break*.
 
 Start the timer, pause as often as you like, and finish the day. Clockout shows the actual work blocks and condenses them into the one line your timesheet needs: the start is the first start, the break is the sum of all gaps, and the end follows from start, working time and break, so the worked time always matches.
