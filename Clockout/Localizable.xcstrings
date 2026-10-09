@@ -2708,7 +2708,6 @@
       }
     },
     "holiday.ascension.ch" : {
-      "extractionState" : "extracted_with_value",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -2725,7 +2724,6 @@
       }
     },
     "holiday.christmas.at" : {
-      "extractionState" : "extracted_with_value",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -2742,7 +2740,6 @@
       }
     },
     "holiday.christmas.ch" : {
-      "extractionState" : "extracted_with_value",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -2759,7 +2756,6 @@
       }
     },
     "holiday.stephen.at" : {
-      "extractionState" : "extracted_with_value",
       "localizations" : {
         "de" : {
           "stringUnit" : {

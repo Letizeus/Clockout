@@ -3,14 +3,41 @@
   "strings" : {
     "CFBundleDisplayName" : {
       "comment" : "Bundle display name",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Clockout"
+          }
+        }
+      },
       "shouldTranslate" : false
     },
     "CFBundleName" : {
       "comment" : "Bundle name",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Clockout"
+          }
+        }
+      },
       "shouldTranslate" : false
     },
     "NSHumanReadableCopyright" : {
       "comment" : "Copyright (human-readable)",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Copyright © 2026 Letizeus. MIT License."
+          }
+        }
+      },
       "shouldTranslate" : false
     },
     "NSLocationUsageDescription" : {
