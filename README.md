@@ -1,3 +1,15 @@
+<p align="center">
+  <a href="https://github.com/Letizeus/LearnHub">
+    <img
+      src="https://img.shields.io/badge/project%20status-WIP-f59e0b?style=for-the-badge&labelColor=111827"
+      alt="Project Status: WIP"
+      height="32"
+    />
+  </a>
+</p>
+
+<img width="1280" height="400" alt="banner-light" src="https://github.com/user-attachments/assets/ff717bd5-70c5-4501-bef4-eef0b86017da" />
+
 # Clockout
 
 A native macOS app for tracking working hours, made for timesheets that only ask for *from*, *to* and *break*.
