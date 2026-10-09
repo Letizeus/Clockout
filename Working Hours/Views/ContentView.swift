@@ -78,7 +78,7 @@ struct ContentView: View {
                 let hasEntries = ((try? context.fetchCount(FetchDescriptor<WorkSession>())) ?? 0) > 0
                 if hasEntries { settings.onboardingDone = true } else { showsOnboarding = true }
             }
-            await HolidaySetup.runInitialDetection(settings: settings, jobs: jobs)
+            HolidaySetup.runInitialDetection(settings: settings, jobs: jobs)
         }
         .sheet(isPresented: $showsOnboarding) {
             OnboardingView(job: jobs.currentJob)

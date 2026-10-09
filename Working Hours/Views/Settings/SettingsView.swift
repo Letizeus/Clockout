@@ -117,11 +117,31 @@ private struct SettingsTabButton: View {
 private struct GeneralSettingsView: View {
     @Environment(AppSettings.self) private var settings
     @Environment(UpdateChecker.self) private var updates
+    @State private var language = AppLanguage.selected
 
     var body: some View {
         @Bindable var settings = settings
 
         VStack(alignment: .leading, spacing: 20) {
+            SettingsSection {
+                SettingsRow(title: "Language", subtitle: language.needsRestart ? "Takes effect after a restart" : nil) {
+                    HStack(spacing: 8) {
+                        if language.needsRestart {
+                            Button("Restart Now") { AppLanguage.relaunch() }
+                                .buttonStyle(.secondary(height: 26))
+                        }
+                        Picker("Language", selection: $language) {
+                            ForEach(AppLanguage.allCases) { option in
+                                Text(option.title).tag(option)
+                            }
+                        }
+                        .labelsHidden()
+                        .fixedSize()
+                    }
+                }
+            }
+            .onChange(of: language) { AppLanguage.select(language) }
+
             SettingsSection(
                 title: "Startup",
                 footer: settings.showMenuBarExtra
@@ -419,7 +439,13 @@ private struct ReminderSettingsView: View {
                     isOn: Binding(get: { settings.remindersEnabled }, set: { setRemindersEnabled($0) })
                 )
                 if permissionDenied {
-                    SettingsNotice(systemImage: "exclamationmark.triangle", text: "Notifications are off. Turn them on in System Settings.")
+                    HStack(spacing: 10) {
+                        SettingsNotice(systemImage: "exclamationmark.triangle", text: "Notifications are off. Turn them on in System Settings.")
+                        Button("Open System Settings") { NSWorkspace.shared.open(ReminderScheduler.settingsURL) }
+                            .buttonStyle(.secondary(height: 26))
+                            .fixedSize()
+                            .padding(.trailing, 14)
+                    }
                 }
             }
 
@@ -454,6 +480,16 @@ private struct ReminderSettingsView: View {
         }
         .onChange(of: settings.breakReminderMinutes) { tracker.rescheduleReminders() }
         .onChange(of: settings.targetReminderEnabled) { tracker.rescheduleReminders() }
+        // Notifications can be turned off in System Settings at any time.
+        .task { await refreshPermission() }
+        .onReceive(NotificationCenter.default.publisher(for: NSApplication.didBecomeActiveNotification)) { _ in
+            Task { await refreshPermission() }
+        }
+    }
+
+    private func refreshPermission() async {
+        let allowed = await ReminderScheduler.isAllowedBySystem()
+        permissionDenied = settings.remindersEnabled && !allowed
     }
 
     private func setRemindersEnabled(_ enabled: Bool) {

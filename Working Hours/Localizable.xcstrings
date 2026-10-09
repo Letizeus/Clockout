@@ -1666,6 +1666,16 @@
         }
       }
     },
+    "Couldn’t get your location. Choose a country.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Standort nicht ermittelbar. Wähle ein Land."
+          }
+        }
+      }
+    },
     "Couldn’t reach GitHub. Try again later.": {
       "localizations": {
         "de": {
@@ -2036,16 +2046,6 @@
         }
       }
     },
-    "Detected from your location; change it in Settings > Jobs > Holidays.": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Über deinen Standort erkannt; ändern unter Einstellungen > Jobs > Feiertage."
-          }
-        }
-      }
-    },
     "Detecting…": {
       "localizations": {
         "de": {
@@ -2408,22 +2408,22 @@
         }
       }
     },
-    "From System Settings": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Aus den Systemeinstellungen"
-          }
-        }
-      }
-    },
     "From your location": {
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
             "value": "Über deinen Standort"
+          }
+        }
+      }
+    },
+    "From your system region; change it in Settings > Jobs > Holidays.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aus deiner Systemregion; ändern unter Einstellungen > Jobs > Feiertage."
           }
         }
       }
@@ -2930,6 +2930,16 @@
         }
       }
     },
+    "Language": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sprache"
+          }
+        }
+      }
+    },
     "Last Month": {
       "localizations": {
         "de": {
@@ -2976,6 +2986,26 @@
           "stringUnit": {
             "state": "translated",
             "value": "Lokal auf diesem Mac"
+          }
+        }
+      }
+    },
+    "Location Services are off. Turn them on in System Settings.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Ortungsdienste sind aus. Schalte sie in den Systemeinstellungen ein."
+          }
+        }
+      }
+    },
+    "Location access is off for Working Hours. Allow it in System Settings.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Working Hours darf deinen Standort nicht verwenden. Erlaube es in den Systemeinstellungen."
           }
         }
       }
@@ -3236,6 +3266,16 @@
         }
       }
     },
+    "No built-in holidays for your location. Choose a country.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Für deinen Standort gibt es keine eingebauten Feiertage. Wähle ein Land."
+          }
+        }
+      }
+    },
     "No day selected": {
       "localizations": {
         "de": {
@@ -3352,16 +3392,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "Nicht erkannt"
-          }
-        }
-      }
-    },
-    "Not detected. Choose a country.": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Nicht erkannt. Wähle ein Land."
           }
         }
       }
@@ -3522,6 +3552,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "Anmeldeobjekte öffnen"
+          }
+        }
+      }
+    },
+    "Open System Settings": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Systemeinstellungen öffnen"
           }
         }
       }
@@ -3878,6 +3918,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "Pflichtpausen und 10-Stunden-Grenze (ArbZG)"
+          }
+        }
+      }
+    },
+    "Restart Now": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jetzt neu starten"
           }
         }
       }
@@ -4448,6 +4498,16 @@
         }
       }
     },
+    "Takes effect after a restart": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wirkt nach einem Neustart"
+          }
+        }
+      }
+    },
     "Target": {
       "localizations": {
         "de": {
@@ -4962,22 +5022,22 @@
         }
       }
     },
-    "Use Location": {
-      "localizations": {
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Standort verwenden"
-          }
-        }
-      }
-    },
     "Use carry-over": {
       "localizations": {
         "de": {
           "stringUnit": {
             "state": "translated",
             "value": "Saldo-Übertrag verwenden"
+          }
+        }
+      }
+    },
+    "Use my location": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Meinen Standort verwenden"
           }
         }
       }

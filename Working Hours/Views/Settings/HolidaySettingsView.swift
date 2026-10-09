@@ -1,3 +1,4 @@
+import AppKit
 import SwiftUI
 
 /// Public holidays of one job: on or off, the region, and single holidays that still count as workdays.
@@ -5,7 +6,7 @@ struct HolidaySettingsView: View {
     @Bindable var job: Job
 
     @State private var isDetecting = false
-    @State private var detectionNote: String?
+    @State private var detection: RegionDetector.Result?
 
     private var year: Int { Calendar.app.component(.year, from: .now) }
 
@@ -14,7 +15,7 @@ struct HolidaySettingsView: View {
             SettingsSection(footer: "Holidays have no target; hours tracked on them still count.") {
                 SettingsToggle(title: "Public holidays", isOn: $job.holidaysEnabled)
                 if job.holidaysEnabled {
-                    SettingsRow(title: "Country", subtitle: detectionNote.map { LocalizedStringResource("\($0)") }) {
+                    SettingsRow(title: "Country", subtitle: detection?.isFound == true ? "From your location" : nil) {
                         HStack(spacing: 8) {
                             Button {
                                 detect()
@@ -22,11 +23,13 @@ struct HolidaySettingsView: View {
                                 if isDetecting {
                                     ProgressView().controlSize(.small)
                                 } else {
-                                    Label("Use Location", systemImage: "location")
+                                    Image(systemName: "location")
                                 }
                             }
                             .buttonStyle(.secondary(height: 26))
                             .disabled(isDetecting)
+                            .help("Use my location")
+                            .accessibilityLabel(Text("Use my location"))
 
                             Picker("Country", selection: countryBinding) {
                                 Text("None").tag(HolidayCountry?.none)
@@ -37,6 +40,9 @@ struct HolidaySettingsView: View {
                             .labelsHidden()
                             .fixedSize()
                         }
+                    }
+                    if let problem = detection?.problem {
+                        LocationProblemRow(problem: problem)
                     }
                     if job.holidayRegion?.country == .germany {
                         SettingsRow(title: "State") {
@@ -64,7 +70,7 @@ struct HolidaySettingsView: View {
             get: { job.holidayRegion?.country },
             set: { country in
                 job.holidayRegion = country.map { HolidayRegion(country: $0, state: job.holidayRegion?.state) }
-                detectionNote = nil
+                detection = nil
             }
         )
     }
@@ -74,7 +80,7 @@ struct HolidaySettingsView: View {
             get: { job.holidayRegion?.state },
             set: { state in
                 job.holidayRegion = HolidayRegion(country: .germany, state: state)
-                detectionNote = nil
+                detection = nil
             }
         )
     }
@@ -84,13 +90,49 @@ struct HolidaySettingsView: View {
         Task {
             let result = await RegionDetector().detect()
             isDetecting = false
-            if let region = result.region {
+            detection = result
+            if case .found(let region) = result {
                 job.holidayRegion = region
-                detectionNote = result.fromLocation ? String(localized: "From your location") : String(localized: "From System Settings")
-            } else {
-                detectionNote = String(localized: "Not detected. Choose a country.")
             }
         }
+    }
+}
+
+/// Why the location could not be used, and the way to fix it.
+struct LocationProblemRow: View {
+    let problem: RegionDetector.Result
+
+    var body: some View {
+        HStack(spacing: 10) {
+            SettingsNotice(systemImage: "location.slash", text: message)
+            if problem == .servicesOff || problem == .denied {
+                Button("Open System Settings") { NSWorkspace.shared.open(RegionDetector.settingsURL) }
+                    .buttonStyle(.secondary(height: 26))
+                    .fixedSize()
+                    .padding(.trailing, 14)
+            }
+        }
+    }
+
+    private var message: LocalizedStringResource {
+        switch problem {
+        case .servicesOff: "Location Services are off. Turn them on in System Settings."
+        case .denied: "Location access is off for Working Hours. Allow it in System Settings."
+        case .unsupportedCountry: "No built-in holidays for your location. Choose a country."
+        default: "Couldn’t get your location. Choose a country."
+        }
+    }
+}
+
+extension RegionDetector.Result {
+    var isFound: Bool {
+        if case .found = self { return true }
+        return false
+    }
+
+    var problem: RegionDetector.Result? {
+        if case .found = self { return nil }
+        return self
     }
 }
 

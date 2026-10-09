@@ -63,7 +63,7 @@ struct OnboardingView: View {
                             .foregroundStyle(.secondary)
                     }
                 } footer: {
-                    Text("Detected from your location; change it in Settings > Jobs > Holidays.")
+                    Text("From your system region; change it in Settings > Jobs > Holidays.")
                         .foregroundStyle(.secondary)
                 }
             }

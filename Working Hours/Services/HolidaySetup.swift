@@ -1,15 +1,23 @@
 import CoreLocation
 import Foundation
 
-/// Finds the holiday region from the current location. Without permission or outside the
-/// supported countries it falls back to the region set in the system settings.
+/// Finds the holiday region from the current location. Only runs when the user asks for it,
+/// so the permission prompt appears in context.
 @MainActor
 final class RegionDetector: NSObject, CLLocationManagerDelegate {
-    struct Result {
-        let region: HolidayRegion?
-        /// True when the region comes from the location, false when from the system settings.
-        let fromLocation: Bool
+    enum Result: Equatable {
+        case found(HolidayRegion)
+        /// Location Services are turned off for the whole Mac.
+        case servicesOff
+        /// The user did not allow location access for this app.
+        case denied
+        /// The location is outside the countries with built-in holidays.
+        case unsupportedCountry
+        case failed
     }
+
+    /// The page in System Settings where location access is turned on.
+    static let settingsURL = URL(string: "x-apple.systempreferences:com.apple.preference.security?Privacy_LocationServices")!
 
     private let manager = CLLocationManager()
     private var authorizationContinuation: CheckedContinuation<Void, Never>?
@@ -22,12 +30,36 @@ final class RegionDetector: NSObject, CLLocationManagerDelegate {
     }
 
     func detect() async -> Result {
-        if let location = await currentLocation(),
-           let placemark = try? await CLGeocoder().reverseGeocodeLocation(location, preferredLocale: .app).first,
-           let region = Self.region(countryCode: placemark.isoCountryCode, area: placemark.administrativeArea) {
-            return Result(region: region, fromLocation: true)
+        // Apple advises against asking this on the main thread.
+        let servicesEnabled = await Task.detached { CLLocationManager.locationServicesEnabled() }.value
+        guard servicesEnabled else { return .servicesOff }
+
+        if manager.authorizationStatus == .notDetermined {
+            await withCheckedContinuation { continuation in
+                authorizationContinuation = continuation
+                manager.requestWhenInUseAuthorization()
+                // macOS ignores the request while the app is not in use; do not wait forever.
+                DispatchQueue.main.asyncAfter(deadline: .now() + 60) { [weak self] in self?.finishAuthorization() }
+            }
         }
-        return Result(region: Self.regionFromLocale(), fromLocation: false)
+        switch manager.authorizationStatus {
+        case .authorizedAlways: break
+        case .denied, .restricted: return .denied
+        default: return .failed
+        }
+
+        let location: CLLocation? = await withCheckedContinuation { continuation in
+            locationContinuation = continuation
+            manager.requestLocation()
+            DispatchQueue.main.asyncAfter(deadline: .now() + 20) { [weak self] in self?.finish(with: nil) }
+        }
+        guard let location,
+              let placemark = try? await CLGeocoder().reverseGeocodeLocation(location, preferredLocale: .app).first
+        else { return .failed }
+        guard let region = Self.region(countryCode: placemark.isoCountryCode, area: placemark.administrativeArea) else {
+            return .unsupportedCountry
+        }
+        return .found(region)
     }
 
     static func region(countryCode: String?, area: String?) -> HolidayRegion? {
@@ -35,30 +67,16 @@ final class RegionDetector: NSObject, CLLocationManagerDelegate {
         return HolidayRegion(country: country, state: area.flatMap(GermanState.init(name:)))
     }
 
+    /// The country set in System Settings > General > Language & Region. Needs no permission.
     static func regionFromLocale(_ locale: Locale = .current) -> HolidayRegion? {
         guard let identifier = locale.region?.identifier, let country = HolidayCountry(rawValue: identifier) else { return nil }
         return HolidayRegion(country: country)
     }
 
-    private func currentLocation() async -> CLLocation? {
-        if manager.authorizationStatus == .notDetermined {
-            await withCheckedContinuation { continuation in
-                authorizationContinuation = continuation
-                manager.requestWhenInUseAuthorization()
-            }
-        }
-        guard manager.authorizationStatus == .authorizedAlways || manager.authorizationStatus == .authorized else { return nil }
-        return await withCheckedContinuation { continuation in
-            locationContinuation = continuation
-            manager.requestLocation()
-        }
-    }
-
     nonisolated func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
         MainActor.assumeIsolated {
             guard manager.authorizationStatus != .notDetermined else { return }
-            authorizationContinuation?.resume()
-            authorizationContinuation = nil
+            finishAuthorization()
         }
     }
 
@@ -70,6 +88,11 @@ final class RegionDetector: NSObject, CLLocationManagerDelegate {
         MainActor.assumeIsolated { finish(with: nil) }
     }
 
+    private func finishAuthorization() {
+        authorizationContinuation?.resume()
+        authorizationContinuation = nil
+    }
+
     private func finish(with location: CLLocation?) {
         locationContinuation?.resume(returning: location)
         locationContinuation = nil
@@ -79,16 +102,16 @@ final class RegionDetector: NSObject, CLLocationManagerDelegate {
 /// Sets the holiday region of jobs that have none yet.
 @MainActor
 enum HolidaySetup {
-    /// Runs once on the first start: jobs without a region get the detected one.
-    static func runInitialDetection(settings: AppSettings, jobs: JobStore) async {
+    /// Runs once on the first start: jobs without a region get the country from the system settings.
+    /// The location is only used when the user asks for it in the holiday settings.
+    static func runInitialDetection(settings: AppSettings, jobs: JobStore) {
         #if DEBUG
         // The demo shares the preferences with the real app and must not use up the first detection.
         if DemoData.isEnabled { return }
         #endif
         guard !settings.holidayDetectionDone else { return }
-        let result = await RegionDetector().detect()
         settings.holidayDetectionDone = true
-        guard let region = result.region else { return }
+        guard let region = RegionDetector.regionFromLocale() else { return }
         for job in jobs.jobs where job.holidayRegionCode.isEmpty {
             job.holidayRegion = region
         }

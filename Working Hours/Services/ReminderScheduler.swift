@@ -7,6 +7,16 @@ enum ReminderScheduler {
     private static let targetIdentifier = "reminder.target"
     private static let awayIdentifier = "reminder.away"
 
+    /// The notification settings of this app in System Settings.
+    static var settingsURL: URL {
+        URL(string: "x-apple.systempreferences:com.apple.Notifications-Settings.extension?id=\(Bundle.main.bundleIdentifier ?? "")")!
+    }
+
+    /// False when notifications were turned off for this app in System Settings.
+    static func isAllowedBySystem() async -> Bool {
+        await UNUserNotificationCenter.current().notificationSettings().authorizationStatus != .denied
+    }
+
     static func requestAuthorization() async -> Bool {
         do {
             return try await UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound])
