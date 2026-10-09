@@ -1,13 +1,3 @@
-<p align="center">
-  <a href="https://github.com/Letizeus/LearnHub">
-    <img
-      src="https://img.shields.io/badge/project%20status-WIP-f59e0b?style=for-the-badge&labelColor=111827"
-      alt="Project Status: WIP"
-      height="32"
-    />
-  </a>
-</p>
-
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset=".github/banner-dark.png">
   <img alt="Clockout: track your day with every pause, copy it as one timesheet line" src=".github/banner-light.png">
