@@ -8,9 +8,10 @@
   </a>
 </p>
 
-<img width="1280" height="400" alt="banner-light" src="https://github.com/user-attachments/assets/ff717bd5-70c5-4501-bef4-eef0b86017da" />
-
-# Clockout
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset=".github/banner-dark.png">
+  <img alt="Clockout: track your day with every pause, copy it as one timesheet line" src=".github/banner-light.png">
+</picture>
 
 A native macOS app for tracking working hours, made for timesheets that only ask for *from*, *to* and *break*.
 
