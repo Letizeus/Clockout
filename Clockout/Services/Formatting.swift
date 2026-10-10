@@ -63,7 +63,12 @@ extension Date {
 }
 
 extension TimeInterval {
-    var wholeMinutes: Int { Int((self / 60).rounded()) }
+    /// Completed minutes, like a clock: 59 seconds are still 0 minutes. The millisecond
+    /// keeps a full minute that picked up floating point error from becoming 0:59.
+    var wholeMinutes: Int { Int(((self + 0.001) / 60).rounded(.down)) }
+
+    /// "0:01" until the time is fully up, so a countdown never shows 0:00 too early.
+    var countdownClock: String { TimeInterval(-(-self).wholeMinutes * 60).clock }
 
     /// "7:05", "-0:30"
     var clock: String {

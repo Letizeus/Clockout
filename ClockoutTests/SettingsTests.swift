@@ -16,7 +16,7 @@ struct JobRulesTests {
         #expect(job.rules.dailyTarget == job.dailyTarget)
 
         job.workdays = [2, 3, 4, 5]
-        #expect(job.dailyTarget.clock == "9:38")
+        #expect(job.dailyTarget.clock == "9:37")
         #expect(job.weeklyTarget.clock == "38:30")
 
         job.workdays = []

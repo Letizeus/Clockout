@@ -147,9 +147,9 @@ struct TimerHeroView: View {
             return String(localized: "Target of \(target.clock) h reached, \(remaining.magnitude.clock) h over")
         }
         if status == .working {
-            return String(localized: "Target \(target.clock) h, \(remaining.clock) h to go, reached at \(now.addingTimeInterval(remaining).clockTime)")
+            return String(localized: "Target \(target.clock) h, \(remaining.countdownClock) h to go, reached at \(now.addingTimeInterval(remaining).clockTime)")
         }
-        return String(localized: "Target \(target.clock) h, \(remaining.clock) h left")
+        return String(localized: "Target \(target.clock) h, \(remaining.countdownClock) h left")
     }
 
     @ViewBuilder

@@ -147,8 +147,8 @@ final class Job {
     func changeTargetMode(to mode: TargetMode) {
         guard mode != targetMode else { return }
         switch mode {
-        case .daily: dailyTargetMinutes = dailyTarget.wholeMinutes
-        case .weekly: weeklyTargetMinutes = weeklyTarget.wholeMinutes
+        case .daily: dailyTargetMinutes = Int((dailyTarget / 60).rounded())
+        case .weekly: weeklyTargetMinutes = Int((weeklyTarget / 60).rounded())
         }
         targetMode = mode
     }

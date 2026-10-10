@@ -324,6 +324,17 @@ struct FormattingAndExportTests {
         #expect(hours(7.75).decimalHours == "7,75")
     }
 
+    @Test func showsCompletedMinutesOnly() {
+        #expect(TimeInterval(59).clock == "0:00")
+        #expect(TimeInterval(60).clock == "0:01")
+        #expect(TimeInterval(119).clock == "0:01")
+        #expect((hours(1) - 0.0000001).clock == "1:00")
+        #expect(TimeInterval(-30).signedClock == "-0:01")
+        #expect(TimeInterval(30).countdownClock == "0:01")
+        #expect(TimeInterval(60).countdownClock == "0:01")
+        #expect(TimeInterval(61).countdownClock == "0:02")
+    }
+
     @Test func exportsOneLinePerDay() {
         let days = WorkStatistics.days(
             in: DateInterval(start: date(0, 0), end: date(0, 0, day: 9)),
