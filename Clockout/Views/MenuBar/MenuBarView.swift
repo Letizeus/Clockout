@@ -7,7 +7,8 @@ struct MenuBarLabel: View {
     var body: some View {
         switch tracker.status {
         case .idle:
-            Image(systemName: "clock")
+            Image(nsImage: MenuBarItemImage.make(symbol: "clock"))
+                .accessibilityLabel(Text(verbatim: "Clockout"))
         case .working:
             let worked = tracker.report(forDayOf: tracker.now, job: tracker.focusJob, now: tracker.now).workedDuration
             item(symbol: "timer", time: worked)
@@ -16,13 +17,43 @@ struct MenuBarLabel: View {
         }
     }
 
-    /// The menu bar drops images embedded in text, so the symbol and the time are separate views.
     private func item(symbol: String, time: TimeInterval) -> some View {
-        HStack(spacing: 4) {
-            Image(systemName: symbol)
-            Text(time.clock)
-                .monospacedDigit()
+        Image(nsImage: MenuBarItemImage.make(symbol: symbol, text: time.clock))
+            .accessibilityLabel(Text(verbatim: time.clock))
+    }
+}
+
+/// The menu bar drops symbols embedded in text and draws other custom labels as one picture
+/// centered on the text's line height, which sets the digits too high. This template image
+/// gives the symbol and the digits one midline, and the symbol alone sits on the same pixels.
+private enum MenuBarItemImage {
+    static func make(symbol: String, text: String = "") -> NSImage {
+        let size = NSFont.menuBarFont(ofSize: 0).pointSize
+        let font = NSFont.monospacedDigitSystemFont(ofSize: size, weight: .regular)
+        let string = NSAttributedString(string: text, attributes: [.font: font, .foregroundColor: NSColor.black])
+        let glyph = NSImage(systemSymbolName: symbol, accessibilityDescription: nil)?
+            .withSymbolConfiguration(.init(pointSize: size, weight: .regular))
+        // The digits cover an even number of pixels; an even symbol height lets both share one midline.
+        var glyphHeight = ceil(glyph?.size.height ?? 0)
+        if Int(glyphHeight) % 2 == 1 { glyphHeight += 1 }
+        let glyphWidth = glyph.map { ceil($0.size.width * glyphHeight / max($0.size.height, 1)) } ?? 0
+        let spacing: CGFloat = text.isEmpty ? 0 : 4
+        // A point of room above and below keeps the height even and everything on whole pixels.
+        let height = glyphHeight + 2
+        let imageSize = NSSize(width: glyphWidth + spacing + ceil(string.size().width), height: height)
+
+        let image = NSImage(size: imageSize, flipped: false) { _ in
+            // At 1x the menu bar sets items half a pixel above its middle; one pixel lower evens it out.
+            let scale = NSGraphicsContext.current?.cgContext.userSpaceToDeviceSpaceTransform.a ?? 2
+            let nudge: CGFloat = scale < 1.5 ? 1 : 0
+            glyph?.draw(in: NSRect(x: 0, y: 1 - nudge, width: glyphWidth, height: glyphHeight))
+            // draw(at:) places the line's bottom edge, which lies one descender below the baseline.
+            let baseline = (height - font.capHeight) / 2 - nudge
+            string.draw(at: NSPoint(x: glyphWidth + spacing, y: baseline + font.descender))
+            return true
         }
+        image.isTemplate = true
+        return image
     }
 }
 
