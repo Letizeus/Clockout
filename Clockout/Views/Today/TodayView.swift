@@ -85,8 +85,9 @@ struct TimerHeroView: View {
 
     var body: some View {
         let status = tracker.status(for: job)
-        let target = job.rules.plannedTarget(for: now)
-        let progress = target > 0 ? report.workedDuration / target : 0
+        let goal = TargetProgress(job: job, report: report, now: now)
+        let target = goal.target
+        let progress = goal.progress
 
         HStack(alignment: .center, spacing: 22) {
             ProgressRing(progress: progress, tint: status == .onBreak ? .amber : .brand, lineWidth: 6)
@@ -106,7 +107,7 @@ struct TimerHeroView: View {
                 Text(report.workedDuration.stopwatch)
                     .font(AppFont.display)
                     .contentTransition(.numericText())
-                Text(targetLine(target: target, status: status))
+                Text(goal.summary(for: status))
                     .font(AppFont.body)
                     .foregroundStyle(.secondary)
             }
@@ -137,21 +138,6 @@ struct TimerHeroView: View {
         .animation(.smooth, value: status)
     }
 
-    private func targetLine(target: TimeInterval, status: TimeTracker.Status) -> String {
-        guard target > 0 else {
-            if let dayOff = job.dayOff(on: now) { return String(localized: "\(dayOff): no target for \(job.displayName) today") }
-            return String(localized: "Not a workday for \(job.displayName)")
-        }
-        let remaining = target - report.workedDuration
-        guard remaining > 0 else {
-            return String(localized: "Target of \(target.clock) h reached, \(remaining.magnitude.clock) h over")
-        }
-        if status == .working {
-            return String(localized: "Target \(target.clock) h, \(remaining.countdownClock) h to go, reached at \(now.addingTimeInterval(remaining).clockTime)")
-        }
-        return String(localized: "Target \(target.clock) h, \(remaining.countdownClock) h left")
-    }
-
     @ViewBuilder
     private func phaseInfo(status: TimeTracker.Status) -> some View {
         switch status {
@@ -180,5 +166,30 @@ struct TimerHeroView: View {
                 .foregroundStyle(.secondary)
                 .contentTransition(.numericText())
         }
+    }
+}
+
+/// Today's progress toward the target, shared by the Today page and the menu bar.
+struct TargetProgress {
+    let job: Job
+    let report: DayReport
+    let now: Date
+
+    var target: TimeInterval { job.rules.plannedTarget(for: now) }
+    var progress: Double { target > 0 ? report.workedDuration / target : 0 }
+
+    func summary(for status: TimeTracker.Status) -> String {
+        guard target > 0 else {
+            if let dayOff = job.dayOff(on: now) { return String(localized: "\(dayOff): no target for \(job.displayName) today") }
+            return String(localized: "Not a workday for \(job.displayName)")
+        }
+        let remaining = target - report.workedDuration
+        guard remaining > 0 else {
+            return String(localized: "Target of \(target.clock) h reached, \(remaining.magnitude.clock) h over")
+        }
+        if status == .working {
+            return String(localized: "Target \(target.clock) h, \(remaining.countdownClock) h to go, reached at \(now.addingTimeInterval(remaining).clockTime)")
+        }
+        return String(localized: "Target \(target.clock) h, \(remaining.countdownClock) h left")
     }
 }
